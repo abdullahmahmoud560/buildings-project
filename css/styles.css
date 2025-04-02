@@ -35,7 +35,7 @@ header {
     left: 1rem;
     background: transparent;
     border: none;
-    color: #F5DF4D; /* Change color to match theme */
+    color: white; /* Change color to match theme */
     cursor: pointer;
     font-size: 1.2rem;
     display: flex;
@@ -254,17 +254,7 @@ button {
     margin-right: 10px;
 }
 
-/* 📌 Responsive Design Adjustments */
-@media (max-width: 768px) {
-    .search-filters-container {
-        flex-direction: column;  /* Stack the filter items on small screens */
-    }
 
-    .search-filters-container .col-md-2 {
-        width: 100%; /* Ensure they take up full width */
-        margin-right: 0;
-    }
-}
 .soldout-toggle {
     cursor: pointer;
     padding: 10px 20px;
@@ -334,4 +324,76 @@ button {
 #table td {
     background-color: transparent !important;
     color: white;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 90%; /* تقليل العرض على الشاشات المتوسطة */
+    }
+
+    .search-filters-container {
+        flex-wrap: wrap;
+    }
+    
+    .search-filters-container .col-md-2 {
+        flex: 1 1 45%; /* جعل العناصر تأخذ 45% عند الشاشات المتوسطة */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-filters-container {
+        flex-direction: column;
+        align-items: stretch;
+        margin-top: 15px;
+    }
+
+    .search-filters-container .col-md-2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .table {
+        font-size: 14px; /* تقليل حجم الخط للجدول */
+    }
+
+    #table th, 
+    #table td {
+        padding: 8px; /* تصغير الحواف الداخلية */
+    }
+
+    .soldout-toggle {
+        font-size: 16px; /* تصغير حجم النص */
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .header-center {
+        font-size: 18px;
+    }
+
+    .back-button {
+        font-size: 1rem;
+    }
+
+    .table {
+        font-size: 12px; /* تصغير الخط أكثر */
+    }
+
+    #table th, 
+    #table td {
+        padding: 6px;
+    }
+
+    .soldout-toggle {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
 }
