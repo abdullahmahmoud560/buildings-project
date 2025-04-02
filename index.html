@@ -11,23 +11,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="main-page-background">
-    <header class="bg-dark text-light py-2 shadow" style="background-color: #939597 !important;">
+    <header class="text-light py-2 shadow">
         <div class="container d-flex justify-content-between align-items-center">
             <!-- القسم الأيسر: الهاتف -->
             <div class="d-flex align-items-center">
                 <img src="../images/CallUs2.png" alt="Phone Icon" width="30" height="30" class="me-2">
-                <a href="tel:07716361821" class="text-light text-decoration-none fs-5" style="color: #F5DF4D !important; ">07716361821</a>
+                <a href="tel:07716361821" class="text-light text-decoration-none fs-5" style="color: white !important; ">07716361821</a>
             </div>
     
             <!-- القسم الأوسط: العنوان -->
             <div class="text-center flex-grow-1">
-                <h3 class="mb-0 fs-4 fw-bold" style="color: #F5DF4D;">دليل المجمعات السكنية في بغداد</h3>
+                <h3 class="mb-0 fs-4 fw-bold" style="color: white;;">دليل المجمعات السكنية في بغداد</h3>
             </div>
     
             <!-- القسم الأيمن: البحث و "من نحن" -->
             <div class="d-flex align-items-center">
                 <input type="text" id="searchInput" class="form-control me-2" placeholder="🔍 ابحث عن مجمع" style="width: 200px; height: 45px; margin: 15px;">
-                <a href="contact.html" class="btn btn-primary px-4" style="height: 45px; display: flex; align-items: center; background-color: black !important; color: #F5DF4D !important;">من نحن</a>
+                <a href="contact.html" class="px-4" style="height: 45px; display: flex; align-items: center;  color: white !important;">من نحن</a>
             </div>
         </div>
     </header>
@@ -41,7 +41,7 @@
 
 
         <div class="search-filters-container container mt-4">
-            <div class="col-md-5 bg-white p-2 rounded shadow w-100" style="background-color: #939597 !important; margin-bottom: 25px;">
+            <div class="col-md-5 p-2 rounded shadow w-100" style="margin-bottom: 25px; color: white;">
                 <h2 class="text-center mb-4">البحث عن المجمعات</h2>
             </div>
             
@@ -96,18 +96,18 @@
 
         <div class="row justify-content-between align-items-center w-100" style="margin-top: 20px !important; padding: 10px;">
                 <div id="results" style="display:none;">
-                    <div class="col-md-5 bg-white p-2 rounded shadow w-100" style="background-color: #939597 !important; margin-bottom: 25px;">
-                        <h2 class="text-center mb-4">البحث عن المجمعات</h2>
+                    <div class="col-md-5 p-2 rounded shadow w-100" style="margin-bottom: 25px; color: white;">
+                        <h2 class="text-center mb-4">نتائج البحث</h2>
                     </div>
-                    <table class="table table-bordered text-center w-100 mx-auto" style="border: 2px solid #939597; border-radius: 10px; overflow: hidden;">
+                    <table class="table-bordered text-center w-100 mx-auto" id="table">
                         <thead>
-                            <tr style="font-size: 25px; border-bottom: 1px solid #939597;">
+                            <tr style="font-size: 30px;">
                                 <th>الاسم</th>
                             </tr>
                         </thead>
-                        <tbody  style="font-size: 20px;">
+                        <tbody  style="font-size: 25px;">
                             <!-- سيتم إضافة الأسماء هنا باستخدام JavaScript -->
-                            <tr style="border-bottom: 1px solid #939597;">
+                            <tr>
                                 <td id="details">اسم المجمع السكني 1</td>
                             </tr>
                         </tbody>
@@ -191,7 +191,7 @@
     </div> <!-- End container -->
 
     <!-- Moving the map to the bottom of the page -->
-    <div style="width: 100%; height: 500px;">
+    <div style="width: 100%; height: 500px; margin-bottom: -47px;">
         <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
           src="https://maps.google.com/maps?q=Baghdad&t=&z=12&ie=UTF8&iwloc=&output=embed">
         </iframe>

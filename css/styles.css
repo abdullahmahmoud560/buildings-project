@@ -20,19 +20,9 @@
 
 /* 📌 Header */
 header {
-    display: flex;
-    flex-direction: row-reverse; /* essential for RTL layout */
-    align-items: center;
-    justify-content: center; /* center your header content */
-    background: #939597; /* Change background to match footer */
-    color: #F5DF4D; /* Change text color to match footer */
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    font-size: 1.8rem;
-    font-weight: bold;
-    z-index: 1000;
+    background-color: transparent !important;
+    border: 1px solid #ccc !important; /* للحفاظ على الإطار */
+    color: white !important; /* تأكد أن النص مرئي */
 }
 
 .header-content {
@@ -51,11 +41,6 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-header:hover {
-    background: #F5DF4D;
-    color: #7F8285;
 }
 
 button {
@@ -185,7 +170,7 @@ button {
 
 /* ✅ Result links  yellow */
 .list-group-item a {
-    color: #F5DF4D;
+    color: black;
     font-weight: bold;
     text-decoration: none;
 }
@@ -282,13 +267,11 @@ button {
 }
 .soldout-toggle {
     cursor: pointer;
-    background-color: #939597; /* لون خلفية الفوتر */
-    color: #F5DF4D; /* لون النص من الفوتر */
     padding: 10px 20px;
     border-radius: 5px;
     display: inline-block;
-    transition: background-color 0.3s ease;
-    border: 2px solid #F5DF4D; /* حدود بلون النص */
+    background-color: transparent; /* إزالة أي خلفية */
+    color: white; /* تأكد أن النص واضح */
 }
 
 .soldout-toggle:hover {
@@ -344,4 +327,11 @@ button {
     background-attachment: fixed;
     background-size: cover; 
     margin: 0;
+}
+
+#table, 
+#table th, 
+#table td {
+    background-color: transparent !important;
+    color: white;
 }
