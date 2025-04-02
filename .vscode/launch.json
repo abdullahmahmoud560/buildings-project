@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open main.html",
+            "file": "${workspaceFolder}/data/main.html",
+            "webRoot": "C:/Users/Lenovo/Desktop/Shahad/BaghdadResidentialGuide/BaghdadResidentialGuide"
+        }
+    ]
+}

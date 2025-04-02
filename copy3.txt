@@ -1,0 +1,151 @@
+ <!-- <script>
+        let data = {}; // Store JSON data
+
+        document.getElementById('region').addEventListener('change', function () {
+            document.getElementById('typeSelection').style.display = this.value ? "block" : "none";
+            document.getElementById('results').style.display = "none";
+        });
+
+        document.getElementById('type').addEventListener('change', fetchFilteredData);
+        document.getElementById('minPrice').addEventListener('input', fetchFilteredData);
+        document.getElementById('maxPrice').addEventListener('input', fetchFilteredData);
+
+        async function fetchData(region, type) {
+            const filename = `/data/${region}${type === 'building' ? 'B' : 'H'}.json`;
+            try {
+                const response = await fetch(filename);
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                data = await response.json();
+                updateResults(region, type);
+            } catch (error) {
+                console.error(`❌ Error loading JSON file: ${filename}`, error);
+                document.getElementById('details').innerHTML = "<p>❌ لم يتم العثور على بيانات.</p>";
+                document.getElementById('results').style.display = "none";
+            }
+        }
+
+        function updateResults(region, type) {
+            const detailsDiv = document.getElementById('details');
+            const results = data[region][type];
+
+            const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+            const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
+
+            const filteredResults = results.filter(item => item.price_range.min >= minPrice && item.price_range.max <= maxPrice);
+
+            if (filteredResults.length > 0) {
+                detailsDiv.innerHTML = filteredResults.map((item, index) => `
+                    <li class="list-group-item">
+                        <a href="details.html?region=${region}&type=${type}&index=${index}" class="text-decoration-none">
+                            ${item.name} - ${item.location} (السعر: ${item.price_range.min} - ${item.price_range.max} دينار عراقي)
+                        </a>
+                    </li>
+                `).join('');
+                document.getElementById('results').style.display = 'block';
+            } else {
+                detailsDiv.innerHTML = "<p>❌ لا توجد عقارات ضمن النطاق السعري المحدد.</p>";
+                document.getElementById('results').style.display = "none";
+            }
+        }
+
+        function fetchFilteredData() {
+            const region = document.getElementById('region').value;
+            const type = document.getElementById('type').value;
+            if (region && type) fetchData(region, type);
+        }
+    </script> -->
+
+ <!-- <script>
+        let data = {}; // Store JSON data
+
+        // ✅ Extract Parameters from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const region = urlParams.get('region');
+        const type = urlParams.get('type');
+        const index = parseInt(urlParams.get('index'), 10);
+
+        console.log(`🌍 Extracted from URL: Region=${region}, Type=${type}, Index=${index}`);
+
+        if (region && type && !isNaN(index)) {
+            fetchData(region, type, index);
+        } else {
+            console.error("❌ Missing or incorrect parameters: region, type, or index.");
+        }
+
+        // ✅ Function to Fetch Data Dynamically
+        async function fetchData(region, type, index) {
+            const filename = `/data/${region}${type === 'building' ? 'B' : 'H'}.json`;
+
+            try {
+                console.log(`🔍 Fetching JSON file: ${filename}`);
+                const response = await fetch(filename);
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+
+                data = await response.json();
+                console.log("✅ Data Loaded Successfully:", data);
+
+                loadPropertyDetails(region, type, index);
+            } catch (error) {
+                console.error(`❌ Error loading JSON file: ${filename}`, error);
+                document.getElementById('info').innerHTML = "<p>❌ فشل تحميل البيانات.</p>";
+            }
+        }
+
+        // ✅ Load and Display Property Details
+        function loadPropertyDetails(region, type, index) {
+    console.log("🔍 Checking Data:", data);
+    console.log(`📌 Looking for data[${region}][${type}][${index}]`);
+
+    if (data[region] && data[region][type] && Array.isArray(data[region][type]) && data[region][type][index]) {
+        const item = data[region][type][index];
+
+        console.log("✅ Property Found:", item);
+
+        document.getElementById('name').textContent = item.name;
+        document.getElementById('info').innerHTML = `
+            <p><strong>الموقع:</strong> ${item.location}</p>
+            <p><strong>المساحة:</strong> ${item.area}</p>
+            <p><strong>المساحات الخضراء:</strong> ${item.green_spaces}</p>
+            <p><strong>إجمالي الوحدات:</strong> ${item.total_units}</p>
+            <p><strong>${item.buildings_count !== null ? "عدد المباني" : "إجمالي البيوت"}:</strong> ${item.buildings_count !== null ? item.buildings_count : item.total_houses}</p>
+            <p><strong>مساحات الوحدات:</strong> ${item.unit_sizes}</p>
+            <p><strong>💰 السعر:</strong> ${item.price_range.min} - ${item.price_range.max} دينار عراقي</p>
+            <p><strong>الخدمات:</strong> ${item.services.join(", ")}</p>
+            <p><strong>التوافر:</strong> ${item.availability}</p>
+            <p><strong>الاتصال:</strong> <a href="tel:${item.contact.phone}">${item.contact.phone}</a></p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:${item.contact.email}">${item.contact.email}</a></p>
+            <p><strong>الموقع الإلكتروني:</strong> <a href="${item.contact.website}" target="_blank">${item.contact.website}</a></p>
+        `;
+
+        // ✅ Dynamically Populate Images Carousel
+        const carouselIndicators = document.getElementById('carousel-indicators');
+        const carouselInner = document.getElementById('carousel-inner');
+
+        carouselIndicators.innerHTML = "";
+        carouselInner.innerHTML = "";
+
+        item.images.forEach((img, imgIndex) => {
+            // Create indicators
+            carouselIndicators.innerHTML += `
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${imgIndex}" 
+                    ${imgIndex === 0 ? 'class="active" aria-current="true"' : ''} aria-label="Slide ${imgIndex + 1}">
+                </button>
+            `;
+
+            // Create carousel items
+            carouselInner.innerHTML += `
+                <div class="carousel-item ${imgIndex === 0 ? 'active' : ''}">
+                    <img src="${img}" class="d-block w-100 img-fluid" alt="Property Image">
+                </div>
+            `;
+        });
+
+    } else {
+        console.warn("❌ No matching property found.");
+        document.getElementById('info').innerHTML = "<p>❌ لم يتم العثور على تفاصيل لهذا العقار.</p>";
+    }
+}
+</script> -->
+
+
+    

@@ -1,0 +1,2 @@
+I have an HTML page that displays property details from JSON files, including a Bootstrap carousel for images.
+multiple properties in different JSON files and need to dynamically generate the Bootstrap carousel,

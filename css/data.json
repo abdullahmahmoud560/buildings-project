@@ -1,0 +1,71 @@
+{
+    "location": {
+      "description": "مجمع بوابة العراق السكني",
+      "coordinates": "منطقة المنصور، شارع دمشق، أمام منتزه الزوراء",
+      "proximity": "قريب من المنطقة الخضراء والطرق الرئيسية"
+    },
+    "project_components": {
+      "buildings": {
+        "type": "عمودي",
+        "number": 47,
+        "floors": {
+          "type_A": 14,
+          "type_B": 17
+        },
+        "total_units": 3854,
+        "features": "مساحات وتصاميم متنوعة لتلبية احتياجات العائلات"
+      },
+      "design": "إطلالات مميزة ومساحات سكنية متنوعة"
+    },
+    "facilities": {
+      "transportation_and_parking": {
+        "description": [
+          "مواقف سيارات مفتوحة",
+          "سهولة الوصول إلى الطرق الرئيسية"
+        ]
+      },
+      "commercial_amenities": {
+        "shopping_center": "مجموعة محلات ومطاعم ومقاهي",
+        "daily_needs": "محلات تجارية"
+      },
+      "healthcare": {
+        "hospital": "مستشفى متكامل",
+        "pharmacies": "متوفرة في جميع أنحاء المجمع"
+      },
+      "education": {
+        "schools": "مدارس حديثة لجميع المراحل"
+      },
+      "worship": {
+        "mosque": "مسجد داخل المجمع"
+      },
+      "hospitality": {
+        "hotel": "فندق خمس نجوم"
+      },
+      "security": {
+        "police_station": "مركز شرطة",
+        "system": "كاميرات مراقبة وحراسة 24/7"
+      },
+      "recreational_and_sports": {
+        "facilities": [
+          "نادي رياضي",
+          "حدائق ومنتزهات",
+          "ملاعب للأطفال",
+          "مسبح مشترك"
+        ]
+      },
+      "technology": {
+        "internet": "شبكة إنترنت عالية السرعة",
+        "smart_homes": "التحكم بالإضاءة والتكييف عبر الهاتف"
+      }
+    },
+    "pricing_details": {
+      "price_per_square_meter": {
+        "range": "1,188,000 دينار عراقي إلى 3,000,000 دينار عراقي",
+        "factors": [
+          "المساحة",
+          "الموقع داخل المجمع",
+          "الإطلالات المتاحة"
+        ]
+      }
+    }
+  }

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل المجمعات السكنية في بغداد</title>
+    <link rel="icon" href="../images/icon.png" type="image/png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="main-page-background">
+    <header class="bg-dark text-light py-2 shadow" style="background-color: #939597 !important;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- القسم الأيسر: الهاتف -->
+            <div class="d-flex align-items-center">
+                <img src="../images/CallUs2.png" alt="Phone Icon" width="30" height="30" class="me-2">
+                <a href="tel:07716361821" class="text-light text-decoration-none fs-5" style="color: #F5DF4D !important; ">07716361821</a>
+            </div>
+    
+            <!-- القسم الأوسط: العنوان -->
+            <div class="text-center flex-grow-1">
+                <h3 class="mb-0 fs-4 fw-bold" style="color: #F5DF4D;">دليل المجمعات السكنية في بغداد</h3>
+            </div>
+    
+            <!-- القسم الأيمن: البحث و "من نحن" -->
+            <div class="d-flex align-items-center">
+                <input type="text" id="searchInput" class="form-control me-2" placeholder="🔍 ابحث عن مجمع" style="width: 200px; height: 45px; margin: 15px;">
+                <a href="contact.html" class="btn btn-primary px-4" style="height: 45px; display: flex; align-items: center; background-color: black !important; color: #F5DF4D !important;">من نحن</a>
+            </div>
+        </div>
+    </header>
+    
+    
+    
+    
+
+
+    <div class="container mt-5">
+        <!-- إضافة كروسيل للصور المتغيرة -->
+            <div id = "img" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../images/building.png" class="d-block w-100" alt="مجمع سكني 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../images/building1.png" class="d-block w-100" alt="مجمع سكني 2">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#img" data-bs-slide="prev" onmouseover="this.style.backgroundColor='transparent'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor=''; this.style.boxShadow=''">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#img" data-bs-slide="next" onmouseover="this.style.backgroundColor='transparent'; this.style.boxShadow='none'" onmouseout="this.style.backgroundColor=''; this.style.boxShadow=''">
+                    <span class="carousel-control-next-icon"></span>
+                </button>                
+            </div>
+            
+        
+            <!-- باقي محتوى الصفحة -->
+        
+
+        <div class="search-filters-container container mt-4">
+            <div class="col-md-5 bg-white p-2 rounded shadow w-100" style="background-color: #939597 !important; margin-bottom: 25px;">
+                <h2 class="text-center mb-4">البحث عن المجمعات</h2>
+            </div>
+            
+            <div class="row justify-content-between">
+                <div class="col-md-2">
+                    <label for="region" class="form-label">اختر المنطقة</label>
+                    <select id="region" class="form-select">
+                        <option value="">اختر...</option>
+                        <option value="reign1">الكرخ</option>
+                        <option value="reign2">الرصافة</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="type" class="form-label">اختر النوع</label>
+                    <select id="type" class="form-select">
+                        <option value="">أختار...</option>
+                        <option value="building">عمودي/عمارات</option>
+                        <option value="houses">افقي/منازل</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="services" class="form-label">الخدمات</label>
+                    <select id="services" class="form-select">
+                        <option value="">أختار...</option>
+                        <option value="">الكل</option>
+                        <option value="مركز تجاري">مركز تجاري</option>
+                        <option value="ملعب للأطفال">ملعب للأطفال</option>
+                        <option value="مسبح">مسبح</option>
+                    </select>
+                </div>
+                
+                <div class="col-md-2">
+                    <label for="availability" class="form-label">التوافر</label>
+                    <select id="availability" class="form-select">
+                        <option value="">أختار...</option>
+                        <option value="">الكل</option>
+                        <option value="جاهز للسكن">جاهز للسكن</option>
+                        <option value="غير جاهز للسكن">غير جاهز للسكن</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="minPrice" class="form-label">أدنى سعر</label>
+                    <input type="number" id="minPrice" class="form-control" placeholder="أدخل أدنى سعر">
+                </div>
+                <div class="col-md-2">
+                    <label for="maxPrice" class="form-label">أعلى سعر</label>
+                    <input type="number" id="maxPrice" class="form-control" placeholder="أدخل أعلى سعر">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-between align-items-center w-100" style="margin-top: 20px !important; padding: 10px;">
+                <div id="results" style="display:none;">
+                    <div class="col-md-5 bg-white p-2 rounded shadow w-100" style="background-color: #939597 !important; margin-bottom: 25px;">
+                        <h2 class="text-center mb-4">البحث عن المجمعات</h2>
+                    </div>
+                    <table class="table table-bordered text-center w-100 mx-auto" style="border: 2px solid #939597; border-radius: 10px; overflow: hidden;">
+                        <thead>
+                            <tr style="font-size: 25px; border-bottom: 1px solid #939597;">
+                                <th>الاسم</th>
+                            </tr>
+                        </thead>
+                        <tbody  style="font-size: 20px;">
+                            <!-- سيتم إضافة الأسماء هنا باستخدام JavaScript -->
+                            <tr style="border-bottom: 1px solid #939597;">
+                                <td id="details">اسم المجمع السكني 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    
+                    
+                </div>
+            <div class="col-md-6" style="display: none;">
+                <div id="carouselExampleIndicators" class="carousel slide rounded shadow-lg" data-bs-ride="carousel" data-bs-interval="3000">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></button>
+                    </div>
+                    <div class="carousel-inner" style="display: none;">
+                        <div class="carousel-item active">
+                            <img src="../images/mainPage/baghdad.jpg" class="d-block w-100 rounded" alt="Image 1">
+                        </div>
+                        <div class="carousel-item active">
+                            <img src="../images/PALM.webp" class="d-block w-100 rounded" alt="Image">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/mainPage/main1.JPG" class="d-block w-100 rounded" alt="Image 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/mainPage/main2.jpg" class="d-block w-100 rounded" alt="Image 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/mainPage/main3.jpg" class="d-block w-100 rounded" alt="Image 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/mainPage/main4.jpg" class="d-block w-100 rounded" alt="Image 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../images/mainPage/capitalCity.png" class="d-block w-100 rounded" alt="Image 6">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="sold-out-section mt-5">
+            <h2 class="text-center mb-4 soldout-toggle">انقر هنا لعرض المجمعات المباعة</h2>
+            <ul id="soldout-list" class="list-group text-end" style="display: none;"></ul>
+        </div>
+
+    </div> <!-- End container -->
+
+    <!-- Moving the map to the bottom of the page -->
+    <div style="width: 100%; height: 500px;">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://maps.google.com/maps?q=Baghdad&t=&z=12&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+    </div>
+
+    <footer class="footer mt-5 py-3 text-center">
+        <div class="container">
+            <p class="mb-0">جميع الحقوق محفوظة &copy; 2024 - دليل المجمعات السكنية في بغداد</p>
+            <p>Developed By: <span class="text-light">Shahad & Saja</span></p>
+        </div>
+    </footer>
+</body>
+</html>

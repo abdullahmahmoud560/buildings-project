@@ -1,0 +1,762 @@
+{
+    "reign1": {
+        "building": [
+            { 
+                "name": "مجمع اليرموك السكني", 
+                "location": "بغداد -اليرموك", 
+                "area": "18,696 متر مربع", 
+                "green_spaces": "40,000 متر مربع",
+                "total_units": 1088,
+                "buildings_count": 17,
+                "total_houses": null,
+                "unit_sizes": "الشقق السكنية: تتراوح مساحتها بين 100-150 متر مربع , الفلل السكنية تتراوح مساحتها بين 200-300 متر مربع",
+                "price_range": {
+                    "min": 100000000,
+                    "max": 200000000
+                },
+                "services": [
+                    "مركز تجاري",
+                    "ملعب للأطفال",
+                    "مسبح",
+                    "مواقف سيارات تحت الأرض",
+                    "مساحات خضراء وحدائق",
+                    "نظام أمني متكامل 24/7"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "+964-7800996622",
+                    "email": "info@ycompound.com",
+                    "website": "https://ycompound.com"
+                },
+                "images": [
+                    "../images/reign1/1/Alyermok/image1.jpeg",
+                    "../images/reign1/1/Alyermok/image2.jpeg",
+                    "../images/reign1/1/Alyermok/image3.jpeg",
+                    "../images/reign1/1/Alyermok/image4.jpeg",
+                    "../images/reign1/1/Alyermok/image5.jpeg",
+                    "../images/reign1/1/Alyermok/image6.jpeg",
+                    "../images/reign1/1/Alyermok/image7.jpeg"
+                ]
+            },
+            
+            {
+                "name": "مجمع بوابة العراق السكني",
+                "location": "بغداد - المنصور- منطقة مطار المثنى، شارع دمشق، أمام منتزه الزوراء",
+                "area": "غير محدد",
+                "total_units": 3854,
+                "buildings_count": 47,
+                "unit_sizes": "مساحات متنوعة لتلبية احتياجات العائلات المختلفة",
+                "price_range": {
+                    "min": 118800000,
+                    "max": 238472950
+                },
+                "services": [
+                    "مركز تسوق متكامل",
+                    "مدارس لجميع المراحل",
+                    "مستشفى متكامل",
+                    "مسجد داخل المجمع",
+                    "فندق خمس نجوم",
+                    "نظام أمني متطور 24/7",
+                    "نادي رياضي ومسابح",
+                    "ملاعب للأطفال"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "+964 781 000 8888",
+                    "email": "غير متوفر",
+                    "website": "https://baghdadic.gov.iq/view.php?cat=68"
+                },
+                "images": [
+                    "../images/reign1/1/BawaabatAleiraq/BawaabatAleiraq1.jpg",
+                    "../images/reign1/1/BawaabatAleiraq/BawaabatAleiraq2.jpg",
+                    "../images/reign1/1/BawaabatAleiraq/BawaabatAleiraq3.jpg",
+                    "../images/reign1/1/BawaabatAleiraq/BawaabatAleiraq4.jpg"
+                ]
+            },
+            {
+                "name": "مجمع أبراج النخلة السكني",
+                "location": "بغداد - منطقة مطار المثنى",
+                "area": "غير محدد",
+                "total_units": "غير محدد",
+                "buildings_count": 20,
+                "unit_sizes": "شقق بمساحات 224 و 221 متر مربع",
+                "price_range": {
+                    "min": "13500000",
+                    "max": "14500000"
+                },
+                "services": [
+                    "مدرسة عالمية، روضة وحضانة",
+                    "مول تجاري",
+                    "سينما",
+                    "ملاعب رياضية",
+                    "مستوصف طبي",
+                    "مسجد وحدائق"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "",
+                    "email": "غير متوفر",
+                    "website": "https://palmtowersiq.com/"
+                },
+                "images": [
+                    "../images/reign1/1/palm/palm (1).jpg",
+                    "../images/reign1/1/palm/palm (2).jpg",
+                    "../images/reign1/1/palm/palm (1).png",
+                    "../images/reign1/1/palm/palm (2).png",
+                    "../images/reign1/1/palm/palm (3).png"
+                ]
+            },
+            {
+                "name": "مجمع زهراء السيدية",
+                "location": "بغداد - السيدية",
+                "area": "غير محدد",
+                "total_units": "غير محدد",
+                "buildings_count": 2,
+                "unit_sizes": "غير محدد",
+                "price_range": {
+                    "min": "100000000",
+                    "max": "500000000"
+                },
+                "services": [
+                    "مول تجاري",
+                    "مواقف سيارات",
+                    "نظام أمني متكامل 24/7"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "غير متوفر",
+                    "email": "غير متوفر",
+                    "website": "غير متوفر"
+                },
+                "images": [
+                "../images/reign1/1/zahraa/z6.jpg",
+                "../images/reign1/1/zahraa/z7.png",
+                "../images/reign1/1/zahraa/zahraa1.jpg",
+                "../images/reign1/1/zahraa/zahraa2.jpg",
+                "../images/reign1/1/zahraa/zahraa3.png",
+                "../images/reign1/1/zahraa/zahraa4.jpg"
+
+                ]
+            },
+            {
+                "name": "مجمع جزيرة آران السكني",
+                "location": "بغداد - السيدية، شارع قطر الندى",
+                "area": "غير محدد",
+                "total_units": "غير محدد",
+                "buildings_count": 6,
+                "unit_sizes": "مساحات متنوعة من 128 إلى 162 متر مربع",
+                "price_range": {
+                    "min": "غير متوفر",
+                    "max": "غير متوفر"
+                },
+                "services": [
+                    "مول تجاري",
+                    "مواقف سيارات متعددة الطوابق",
+                    "مساحات خضراء",
+                    "نافورات",
+                    "غاز مركزي",
+                    "كهرباء 24 ساعة",
+                    "مصاعد حديثة",
+                    "مولدات احتياطية"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "غير متوفر",
+                    "email": "غير متوفر",
+                    "website": "غير متوفر"
+                },
+                "images": [
+                    "../images/reign1/1/Aran/Aran1.jpg",
+                    "../images/reign1/1/Aran/Aran2.jpg",
+                    "../images/reign1/1/Aran/Aran3.jpg"
+                ]
+            },
+            {
+                "name": "مجمع جواهر دجلة السكني",
+                "location": "بغداد - الكاظمية",
+                "area": "غير محدد",
+                "total_units": 1324,
+                "buildings_count": 13,
+                "unit_sizes": "مساحات متنوعة من 138 إلى 203 متر مربع",
+                "price_range": {
+                    "min": "غير متوفر",
+                    "max": "غير متوفر"
+                },
+                "services": [
+                    "فندق خمس نجوم",
+                    "مراكز تجارية",
+                    "مدارس ابتدائية ومتوسطة",
+                    "مركز صحي",
+                    "مساحات خضراء",
+                    "محطة خدمات",
+                    "مواقف سيارات"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "غير متوفر",
+                    "email": "غير متوفر",
+                    "website": "غير متوفر"
+                },
+                "images": [
+                    "../images/regin1/1/JawaherDiglah/JawaherDiglah1.jpg",
+                    "../images/regin1/1/JawaherDiglah/JawaherDiglah2.jpg"
+
+                ]
+            }
+
+            ,
+            {
+                "name": "مجمع أبراج ميلينيوم السكني",
+                "location": "بغداد - العامرية، مقابل كلية الطب البيطري",
+                "area": "187,990",
+                "green_spaces": 1254,
+                "total_units": null,
+                "buildings_count": 23,
+                "total_houses": null,
+                "unit_sizes": "154 متر مربع (غرفتان نوم وصالة)، 208 متر مربع (ثلاث غرف نوم وصالتان)، 255 متر مربع (أربع غرف نوم وصالتان)",
+                "price_range": {
+    "min": 0,
+    "max": 0
+},
+
+                "services": [
+                    "مسبح",
+                    "جيم",
+                    "مراكز ترفيهية",
+                    "مطاعم",
+                    "مدارس",
+                    "رياض أطفال",
+                    "ملاعب"
+                ],
+                "availability": "غير جاهز للسكن",
+                "contact": {
+                    "phone": "07809279516",
+                    "email": "info@ramlah.co",
+                    "website":"https://ramlah.co/millennium"
+                },
+                "images": [
+                    "../images/reign1/1/Millennium/Millennium (2).jpeg",
+                    "../images/reign1/1/Millennium/MillenniumI.png",
+                    "../images/reign1/1/Millennium/Millennium11.png",
+                    "../images/reign1/1/Millennium/Millennium.png",
+                    "../images/reign1/1/Millennium/Millennium (1).jpeg",
+                    "../images/reign1/1/Millennium/Millennium (3).jpeg",
+                    "../images/reign1/1/Millennium/Millennium (4).jpeg"
+                ]
+            },
+            {
+                "name": "مجمع النسيم السكني",
+                "location": "بغداد - حي الحسين، بالقرب من شارع مطار بغداد",
+                "area": "187,500  متر مربع ",
+                "green_spaces": "واسعة",
+                "total_units": null,
+                "buildings_count": 43,
+                "total_houses": null,
+                "unit_sizes": "140 متر مربع (غرفتان نوم وصالة)، 191 متر مربع (ثلاث غرف نوم وصالة)، 211 متر مربع (أربع غرف نوم وصالة)",
+                "price_range": {
+                    "min": 0,
+                    "max": 0
+                },
+                "services": [
+                    "مدرسة",
+                    "حضانة أطفال",
+                    "قرب الجامعة الأمريكية",
+                    "مجمع تجاري",
+                    "مطاعم فاخرة",
+                    "مسبح داخلي",
+                    "ساونا",
+                    "صالة رياضية حديثة",
+                    "ملاعب أطفال",
+                    "نظام أمني متكامل",
+                    "كهرباء وماء وغاز مركزي",
+                    "نظام تبريد مركزي"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "07700008725",
+                    "email": "info@nasimcity.com",
+                    "website":"https://www.nasimcity.com/"
+                },
+                "images": [
+                    "../images/reign1/1/Alnasim/alnasim1.jpg",
+                    "../images/reign1/1/Alnasim/alnasim2.jpg",
+                    "../images/reign1/1/Alnasim/alnasim3.jpg",
+                    "../images/reign1/1/Alnasim/alnasim4.jpg"
+                ]
+            },
+            {
+                "name": "مجمع أبراج العبسلي السكني",
+                "location": "بغداد - مدينة الكاظمية، شارع المحيط",
+                "area": "غير متوفر",
+                "green_spaces": "مساحات خضراء ومناطق مخصصة للأطفال",
+                "total_units": "غير متوفر",
+                "buildings_count": 9,
+                "total_houses": null,
+                "unit_sizes": "غير متوفر",
+                "price_range": {
+                  "min": 0,
+                  "max": 0
+                },
+                "services": [
+                  "مطاعم وكافتيريات وأفران وسوبر ماركت",
+                  "قاعة مناسبات، صالون حلاقة، مدينة ألعاب، مدرسة، صيدلية",
+                  "ملاعب كرة قدم وتنس، مسابح، قاعة رياضية",
+                  "نظام أمني متكامل ومقاومة الهزات الأرضية",
+                  "مواقف تحت الأرض",
+                  "نظام الاتصال الداخلي",
+                  "محطة تصفية مياه",
+                  "شوارع سياحية"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                  "phone": "07733336616",
+                  "email": "towersabasly@gmail.com",
+                  "website": "https://abasly.com/"
+                },
+                "images": [
+                  "../images/reign1/1/Aleabsali/Aleabsali (2).jpeg",
+                  "../images/reign1/1/Aleabsali/Aleabsali (3).jpeg",
+                  "../images/reign1/1/Aleabsali/Aleabsali (4).jpeg",
+                  "../images/reign1/1/Aleabsali/Aleabsali (5).jpeg",
+                  "../images/reign1/1/Aleabsali/Aleabsali (6).jpeg"
+                ]
+              }
+              ,
+              {
+                "name": "مجمع الود السكني",
+                "location": "بغداد، العامرية، طريق أبو غريب القديم، بالقرب من كلية الزراعة",
+                "side": "الكرخ",
+                "building_type": "عمودي",
+                "buildings_count": 22,
+                "houses_count": 58,
+                "unit_sizes": "تتراوح مساحات الشقق بين 190 و200 متر مربع",
+                "project_status": "قيد الإنشاء",
+                "services": [
+                  "نظام أمني متكامل (كاميرات مراقبة وحراسة على مدار الساعة)",
+                  "مركز تسوق (ماركت)",
+                  "مدرسة",
+                  "مساحات خضراء وحدائق",
+                  "مرافق ترفيهية ورياضية (ملاعب ومناطق مخصصة للأنشطة الرياضية)",
+                  "نظام إدارة المرافق عبر تطبيق إلكتروني (عرض فواتير الخدمات الشهرية، طلب الصيانة، مشاركة رمز QR للضيوف)",
+                  "تجهيزات داخلية (كاونترات مطبخ وحوض غسيل مع مياه وغاز مركزي مباشر)"
+                ],
+                "price_range": {
+                  "min": null,
+                  "max": null
+                },
+                "contact": {
+                  "phone": "+4697507342006",
+                  "email": "غير متوفر",
+                  "website": " https://www.zest-property.com/ar/alwedd "
+                },
+                "images": [
+                    "../images/reign1/1/Al-wid/Al-wid (1).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (2).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (3).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (4).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (5).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (6).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (7).jpeg",
+                    "../images/reign1/1/Al-wid/Al-wid (8).jpeg"
+                
+                ]
+            }
+,
+{
+    "name": "مجمع المحبة السكني",
+    "location": "بغداد، السيدية، شارع قطر الندى",
+    "side": "الكرخ",
+    "building_type": "عمودي",
+    "buildings_count": 9,
+    "building_height": "14 طابقًا لكل مبنى",
+    "total_units": 616,
+    "unit_sizes": "تتراوح بين 103 و146 مترًا مربعًا",
+    "project_status": "قيد الإنشاء",
+    "services": [
+      "مول تجاري (مركز تسوق)",
+      "روضة وحضانة",
+      "مسبح",
+      "بناية إدارية",
+      "كراج سيارات تحت الأرض",
+      "طرق ومساحات خضراء"
+    ],
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "contact": {
+      "company": "شركة خيرات الدر للاستثمار العقاري",
+      "address": "بغداد، السيدية، شارع قطر الندى",
+      "phone": "07728771191",
+      "email": "info@khairataldur.com",
+      "website": "غير متوفر"
+    },
+    "images": [
+    "../images/reign1/1/Almahaba/Almahaba (1).jpeg",
+    "../images/reign1/1/Almahaba/Almahaba (2).jpeg",
+    "../images/reign1/1/Almahaba/Almahaba (3).jpeg"
+]
+  }
+,
+{
+    "name": "مجمع الروان السكني",
+    "location": "بغداد، حي الحسين، بالقرب من جامعة الرشيد",
+    "side": "الكرخ",
+    "building_type": "عمودي",
+    "unit_sizes": "200 متر مربع",
+    "unit_design": "ثلاث غرف نوم، صالة ضيوف، صالة معيشة، مطبخ",
+    "services": [
+      "مدرسة دولية",
+      "حضانة أطفال",
+      "قربه من جامعة الرشيد",
+      "مجمع تجاري (متاجر وماركات عالمية)",
+      "مطاعم فاخرة",
+      "مساحات خضراء واسعة",
+      "مسبح داخلي",
+      "صالة رياضية حديثة",
+      "ملاعب للأطفال",
+      "مواقف سيارات تحت الأرض مؤمنة لكل شقة",
+      "نظام أمني متكامل (حراسة ومراقبة على مدار الساعة)",
+      "نظام إطفاء حرائق متطور",
+      "كهرباء متوفرة 24 ساعة",
+      "ماء وغاز مركزي",
+      "نظام تبريد مركزي",
+      "خدمات تنظيف"
+    ],
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "contact": {
+      "phone": "07736888687",
+      "website": "غير متوفر",
+      "email": "غير متوفر"
+    },
+    "images": [
+      "../images/reign1/1/Alrawan/Alrawan (1).jpeg",
+      "../images/reign1/1/Alrawan/Alrawan (2).jpeg",
+      "../images/reign1/1/Alrawan/Alrawan (3).jpeg",
+      "../images/reign1/1/Alrawan/Alrawan (4).jpeg",
+      "../images/reign1/1/Alrawan/Alrawan (5).jpeg"
+    ]
+  }
+
+  ,
+  {
+    "name": "مجمع هاي كلاس السكني",
+    "location": "بغداد، السيدية، شارع قطر الندى، بالقرب من جسر الجادرية",
+    "side": "الكرخ",
+    "building_type": "عمودي",
+    "buildings_count": 7,
+    "availability": "غير جاهز للسكن",
+    "unit_sizes": "151 متر مربع",
+    "project_status": "قيد الإنشاء",
+    "services": [
+      "كراج متعدد الطوابق",
+      "نظام أمني متكامل (كاميرات مراقبة وحراسة على مدار 24 ساعة)",
+      "قاعة رياضية (جيم)",
+      "سوق (ماركت)",
+      "مسجد",
+      "حضانة",
+      "حدائق ومساحات خضراء",
+      "مدرسة",
+      "نظام المنزل الذكي (Smart System)"
+    ],
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "contact": {
+      "phone": "07744446363"
+    },
+    "images": [
+        "../images/reign1/1/HighClass/HighClass (1).jpeg",
+        "../images/reign1/1/HighClass/HighClass (2).jpeg",
+        "../images/reign1/1/HighClass/HighClass (3).jpeg",
+        "../images/reign1/1/HighClass/HighClass (4).jpeg",
+        "../images/reign1/1/HighClass/HighClass (5).jpeg"
+
+    ]
+  }
+  ,
+  {
+    "name": "مجمع جواهر دجلة السكني",
+    "location": "بغداد - الكاظمية",
+    "area": "غير متوفر",
+    "green_spaces": "حدائق ومناطق خضراء",
+    "total_units": 1324,
+    "buildings_count": 13,
+    "total_houses": null,
+    "unit_sizes": "138، 182، 203 متر مربع",
+    "price_range": {
+      "min": 0,
+      "max": 0
+    },
+    "services": [
+      "فندق خمس نجوم",
+      "مراكز تجارية (3 طوابق)",
+      "جامع بمساحة 600 متر مربع",
+      "مركز صحي بمساحة 300 متر مربع",
+      "مدرسة ابتدائية بمساحة 2000 متر مربع (طابقين)",
+      "مدرسة متوسطة بمساحة 2000 متر مربع (طابقين)",
+      "حضانة وروضة بمساحة 600 متر مربع (طابقين)",
+      "بنية إدارة بمساحة 300 متر مربع",
+      "حدائق ومناطق خضراء",
+      "سوق محلي",
+      "محطة خدمات (مطاعم وكافيهات وأكشاك)"
+    ],
+    "availability": "غير جاهز للسكن",
+    "contact": {
+      "phone": "غير متوفر",
+      "email": "غير متوفر",
+      "website": "غير متوفر"
+    },
+    "images": [
+        "../images/reign1/1/JawaherDiglah/JawaherDiglah1.jpg",
+        "../images/reign1/1/JawaherDiglah/JawaherDiglah2.jpg"
+    ]
+  }
+  ,
+  {
+    "name": "مجمع جزيرة آران السكني",
+    "location": "بغداد - السيدية، شارع قطر الندى",
+    "area": "غير متوفر",
+    "green_spaces": "مساحات خضراء ونافورات",
+    "total_units": "غير متوفر",
+    "buildings_count": 6,
+    "total_houses": null,
+    "unit_sizes": "128، 145، 162 متر مربع",
+    "price_range": {
+      "min": 0,
+      "max": 0
+    },
+    "services": [
+      "مول تجاري بمساحة 1000 متر مربع",
+      "كراج بثلاثة طوابق",
+      "مساحات خضراء",
+      "نافورات",
+      "غاز مركزي",
+      "كهرباء 24 ساعة",
+      "3 مصاعد",
+      "مكباني فاياتي في كل طابق",
+      "مولدات كاتمة احتياطية"
+    ],
+    "availability": "غير جاهز للسكن",
+    "contact": {
+      "phone": "غير متوفر",
+      "email": "غير متوفر",
+      "website": "غير متوفر"
+    },
+    "images": [
+
+        "../images/reign1/1/Aran/Aran1.jpg",
+        "../images/reign1/1/Aran/Aran2.jpg",
+        "../images/reign1/1/Aran/Aran3.jpg"
+
+    ]
+  },
+
+  {
+    "name": "مجمع رويال سيتي السكني",
+    "location": "بغداد - قلب العاصمة",
+    "area": "غير متوفر",
+    "green_spaces": "تغطي 75% من مساحة المشروع",
+    "total_units": 2300,
+    "buildings_count": 13,
+    "total_houses": null,
+    "unit_sizes": "350 متر مربع",
+    "price_range": {
+      "min": 0,
+      "max": 0
+    },
+    "services": [
+      "مواقف سيارات تحت الأرض بمساحة 100,000 متر مربع",
+      "مسابح للرجال والنساء",
+      "قاعات رياضية منفصلة",
+      "مسارات مخصصة للركض بأرضية مطاطية",
+      "مساحات مخصصة للأطفال",
+      "مول تجاري بطول 500 متر على طابقين",
+      "مدرسة داخل المجمع",
+      "نظام كاميرات مراقبة متطور (نهاري/ليلي، تعرف على الوجه)",
+      "منظومة حريق مرشات ماء وحساسات دخان",
+      "نظام إنترنت بكابلات الألياف الضوئية",
+      "نظام هاتف داخلي لكل وحدة",
+      "نظام ستلايت داخلي للشقق",
+      "نافورة موسيقية بمساحة 1,350 متر مربع",
+      "مولدات كهرباء 24 ساعة",
+      "نظام غاز مركزي للطباخات والسخانات",
+      "نظام جمع نفايات مركزي بكل طابق"
+    ],
+    "availability": "غير جاهز للسكن",
+    "contact": {
+      "phone": "07740405090 / 07840405090",
+      "email": "info@royaltowers.co",
+      "website": "https://royaltowers.co/ar/%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9/"
+    },
+    "images": [
+      "../images/reign1/1/RoyalCity/RoyalCity (1).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (2).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (3).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (4).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (5).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (6).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (7).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (8).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (9).jpeg",
+      "../images/reign1/1/RoyalCity/RoyalCity (10).jpeg"
+    ]
+  }
+  ,
+  {
+    "name": "مجمع بغداد ريزيدنسز",
+    "location": "بغداد - المنطقة الخضراء، قرب السفارة الأمريكية",
+    "area": "غير متوفر",
+    "green_spaces": "مساحات خضراء",
+    "total_units": 542,
+    "buildings_count": "غير متوفر",
+    "total_houses": null,
+    "unit_sizes": "185، 215، 250 متر مربع",
+    "price_range": {
+      "min": 0,
+      "max": 0
+    },
+    "services": [
+      "مركز تجاري يضم محلات متنوعة",
+      "مدرسة دولية",
+      "نادي رياضي",
+      "مساحات خضراء",
+      "كهرباء متوفرة 24 ساعة",
+      "تبريد مركزي",
+      "منظومة غاز مركزية",
+      "نظام أمني ومراقبة",
+      "مواقف سيارات"
+    ],
+    "availability": "جاهز للسكن",
+    "contact": {
+      "phone": "07708340808",
+      "email": "sales@baghdadresidences.net",
+      "website": "https://www.facebook.com/baghdadresidences.net/"   
+       },
+    "images": [
+        "../images/reign1/1/BaghdadResidences/Baghdad Residences(1).jpeg",
+        "../images/reign1/1/BaghdadResidences/Baghdad Residences (2).jpeg",
+        "../images/reign1/1/BaghdadResidences/Baghdad Residences (3).jpeg"
+    ]
+  }
+,
+  {
+    "name": "مجمع دار السلام السكني",
+    "location": "مطار المثنى، حي السلام، بغداد، العراق",
+    "area": "حوالي 64 دونمًا",
+    "green_spaces": "مساحات خضراء ومناطق مفتوحة",
+    "total_units": 1740,
+    "buildings_count": 290,
+    "total_houses": null,
+    "unit_sizes": "134 متر² (1,096 شقة)، 205 متر² (250 شقة)",
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "services": [
+      "مدارس ورياض أطفال",
+      "مركز صحي",
+      "منطقة تجارية تضم محلات ومرافق خدمية",
+      "مساحات خضراء ومناطق مفتوحة",
+      "نظام أمني متكامل لضمان سلامة السكان"
+    ],
+    "availability": "غير جاهز للسكن",
+    "contact": {
+      "phone": "07744074455",
+      "email": null,
+      "website": null,
+      "company": "شركة فيض العمارة للمقاولات والتجارة العامة"
+    },
+    "images": [
+      "../images/reign1/1/DarAlSalam/DarAlSalam (1).jpeg",
+      "../images/reign1/1/DarAlSalam/DarAlSalam (2).jpeg"
+    ]
+  },
+  {
+    "name": "مجمع ابن فرناس السكني",
+    "location": "جانب الكرخ، بغداد، العراق",
+    "area": "غير محدد",
+    "green_spaces": "مساحات خضراء، مسطحات مائية، نافورات",
+    "total_units": 2112,
+    "buildings_count": 44,
+    "total_houses": null,
+    "unit_sizes": "120 متر²، 130 متر²، و156 متر² (704 شقق لكل مساحة)",
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "services": [
+      "مدارس ورياض أطفال",
+      "مركز صحي",
+      "مول تجاري",
+      "نادي ترفيهي",
+      "مسبح",
+      "مساحات خضراء",
+      "مسطحات مائية",
+      "نافورات",
+      "سور أمني",
+      "أبراج مراقبة",
+      "كاميرات مراقبة",
+      "مواقف سيارات",
+      "مهبط طائرات مروحية",
+      "مولدات كهربائية",
+      "نظام توزيع الغاز السائل",
+      "محطات معالجة المياه الثقيلة"
+    ],
+    "availability": "جاهز للسكن",
+    "contact": {
+      "phone": "0772 901 4353",
+      "email": null,
+      "website": null
+    },
+    "images": [
+      "../images/reign1/1/IbnFirnas/IbnFirnas (1).jpeg",
+      "../images/reign1/1/IbnFirnas/IbnFirnas (2).jpeg",
+      "../images/reign1/1/IbnFirnas/IbnFirnas (3).jpeg"
+    ]
+  },
+  {
+    "name": "مجمع المحبة السكني",
+    "location": "بغداد، السيدية، شارع قطر الندى، جانب الكرخ، العراق",
+    "area": "غير محدد",
+    "green_spaces": "طرق ومساحات خضراء",
+    "total_units": 616,
+    "buildings_count": 9,
+    "total_houses": null,
+    "unit_sizes": "من 103 متر² إلى 146 متر²",
+    "price_range": {
+      "min": null,
+      "max": null
+    },
+    "services": [
+      "مول تجاري يحتوي على مركز تسوق",
+      "روضة وحضانة",
+      "مسبح",
+      "بناية إدارية",
+      "كراج سيارات تحت الأرض",
+      "طرق ومساحات خضراء"
+    ],
+    "availability": "غير جاهز للسكن",
+    "contact": {
+      "phone": "07728771191",
+      "email": "info@khairataldur.com",
+      "website": null,
+      "company": "شركة خيرات الدر للاستثمار العقاري"
+    },
+    "images": [
+      "../images/regin2/Building/AL-Mahaba/ALMahaba (1).jpeg",
+      "../images/regin2/Building/AL-Mahaba/ALMahaba (2).jpeg",
+      "../images/regin2/Building/AL-Mahaba/ALMahaba (3).jpeg"
+    ]
+  }
+  
+  
+  
+  
+        ]
+    }
+}

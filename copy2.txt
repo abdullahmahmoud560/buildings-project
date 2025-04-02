@@ -1,0 +1,127 @@
+<script>
+        // Extract URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const region = urlParams.get('region');
+        const type = urlParams.get('type');
+        const index = parseInt(urlParams.get('index'), 10);
+    
+        // Fetch JSON Data (Ensure it matches main.html)
+        const data = {
+        reign1: {
+        building: [
+            { 
+                name: "مجمع اليرموك السكني", 
+                location: "بغداد - اليرموك", 
+                area: "18,696 متر مربع", 
+                green_spaces: "40,000 متر مربع",
+                total_units: 1088,
+                buildings_count: 17, // Applies to buildings
+                total_houses: null, // Not applicable for buildings
+                unit_sizes: "الشقق السكنية: تتراوح مساحتها بين 100-150 متر مربع , الفلل السكنية تتراوح مساحتها بين 200-300 متر مربع",
+                services: [
+                    "مركز تجاري",
+                    "ملعب للأطفال",
+                    "مسبح",
+                    "مواقف سيارات تحت الأرض",
+                    "مساحات خضراء وحدائق",
+                    "نظام أمني متكامل 24/7"
+                ],
+                availability: "جاهز للسكن",
+                contact: {
+                    phone: "+964-7800996622",
+                    email: "info@ycompound.com",
+                    website: "https://ycompound.com"
+                },
+                images: [
+                    "../images/regin1/1/image1.jpeg",
+                    "../images/regin1/1/image2.jpeg",
+                    "../images/regin1/1/image3.jpeg",
+                    "../images/regin1/1/image4.jpeg",
+                    "../images/regin1/1/image5.jpeg",
+                    "../images/regin1/1/image6.jpeg",
+                    "../images/regin1/1/image7.jpeg"
+                ]
+            }
+        ],
+                houses: [
+                    { 
+                        name: "مدينة بدور بغداد", 
+                        location: "بغداد", 
+                        area: "450 متر مربع",
+                        green_spaces: "10,000 متر مربع",
+                        total_units: 300,
+                        buildings_count: null, // Not applicable to houses
+                        total_houses: 100, // For houses
+                        unit_sizes: "المنازل: تتراوح مساحتها بين 150-250 متر مربع",
+                        services: [
+                            "مركز تسوق",
+                            "حدائق ومنتزهات",
+                            "مواقف سيارات متوفرة",
+                            "نظام أمني متكامل 24/7"
+                        ],
+                        availability: "جاهز للسكن",
+                        contact: {
+                            phone: "+964-7800996623",
+                            email: "info@badurbaghdad.com",
+                            website: "https://badurbaghdad.com"
+                        },
+                        images: [
+                            "../images/image1.jpg",
+                            "../images/image2.jpg",
+                            "../images/image3.jpg",
+                            "../images/image4.jpg"
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // Fetch the selected property details
+        const item = data[region]?.[type]?.[index];
+
+        if (item) {
+            // Populate property details
+            document.getElementById('name').textContent = item.name;
+            document.getElementById('info').innerHTML = `
+                <p><strong>الموقع:</strong> ${item.location}</p>
+                <p><strong>المساحة:</strong> ${item.area}</p>
+                <p><strong>المساحات الخضراء:</strong> ${item.green_spaces}</p>
+                <p><strong>إجمالي الوحدات:</strong> ${item.total_units}</p>
+                <p><strong>${item.buildings_count !== null ? "عدد المباني" : "إجمالي البيوت"}:</strong> ${item.buildings_count !== null ? item.buildings_count : item.total_houses}</p>
+                <p><strong>مساحات الوحدات:</strong> ${item.unit_sizes}</p>
+                <p><strong>الخدمات:</strong> ${item.services.join(", ")}</p>
+                <p><strong>التوافر:</strong> ${item.availability}</p>
+                <p><strong>الاتصال:</strong> <a href="tel:${item.contact.phone}">${item.contact.phone}</a></p>
+                <p><strong>البريد الإلكتروني:</strong> <a href="mailto:${item.contact.email}">${item.contact.email}</a></p>
+                <p><strong>الموقع الإلكتروني:</strong> <a href="${item.contact.website}" target="_blank">${item.contact.website}</a></p>
+            `;
+
+            // Populate carousel
+            const carouselIndicators = document.getElementById('carousel-indicators');
+            const carouselInner = document.getElementById('carousel-inner');
+
+            // Clear previous content
+            carouselIndicators.innerHTML = "";
+            carouselInner.innerHTML = "";
+
+            item.images.forEach((img, index) => {
+                // Add indicators
+                carouselIndicators.innerHTML += `
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${index}" 
+                        ${index === 0 ? 'class="active" aria-current="true"' : ''} aria-label="Slide ${index + 1}">
+                    </button>
+                `;
+
+                // Add images
+                carouselInner.innerHTML += `
+                    <div class="carousel-item ${index === 0 ? 'active' : ''}">
+                        <img src="${img}" class="d-block w-100" alt="Property Image">
+                    </div>
+                `;
+            });
+        } else {
+            // If no data is found for the selected property
+            document.getElementById('info').innerHTML = "<p>لم يتم العثور على تفاصيل لهذا العقار.</p>";
+            document.getElementById('carouselExampleIndicators').style.display = "none";
+        }
+    </script>

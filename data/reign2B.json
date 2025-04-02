@@ -1,0 +1,257 @@
+{
+  "reign2": {
+    "building": [
+      {
+        "name": "مجمع الرسالة السكني",
+        "location": "جانب الرصافة، حي الرسالة، بداية شارع الضغط",
+        "area": "غير محدد",
+        "green_spaces": "مساحات خضراء واسعة",
+        "total_units": 624,
+        "buildings_count": 13,
+        "total_houses": null,
+        "unit_sizes": "شقق متنوعة المساحات",
+        "price_range": {
+          "min": 85000000,
+          "max": 500000000
+        },
+        "services": [
+          "مركز تجاري",
+          "ملعب للأطفال",
+          "مسبح",
+          "نظام أمني متكامل 24/7"
+        ],
+        "availability": "جاهز للسكن",
+        "contact": {
+          "phone": "07700005772",
+          "email": "resala.cita@gmail.com",
+          "website": "غير متوفر"
+        },
+        "images": []
+      },
+      {
+        "name": "مجمع أبراج العطيفية السكني",
+        "location": "كورنيش العطيفية، نهاية شارع الدامرجي، خلف جامع المعز، بغداد، العراق",
+        "area": "حوالي 25,800 متر مربع",
+        "green_spaces": "حدائق ومساحات خضراء واسعة ونوافير مياه",
+        "total_units": null,
+        "buildings_count": null,
+        "total_houses": null,
+        "unit_sizes": "160 متر²، تتراوح من 125 متر² إلى 205 متر²",
+        "price_range": {
+  "min": null,
+  "max": null
+},
+
+        "services": [
+          "خدمات حماية وحراسة ومراقبة أمنية على مدار الساعة",
+          "حدائق ومساحات خضراء واسعة ونوافير مياه",
+          "مرافق تجارية تلبي احتياجات السكان اليومية",
+          "مناطق مخصصة للمشي وممارسة الرياضة",
+          "مواقف متعددة الطوابق للسكان والزوار"
+        ],
+        "availability": "جاهز للاستلام",
+        "contact": {
+          "phone": "0783 559 9616",
+          "email": "info@abrajatefya.com",
+          "website": "https://www.abrajatefya.com",
+          "short_number": "6624"
+        },
+      
+       "images": [
+        "../images/reign2/Building/Al-AtTaifiya/AlatTaifiya(1).jpeg",
+        "../images/reign2/Building/Al-AtTaifiya/AlatTaifiya(2).jpeg",
+        "../images/reign2/Building/Al-AtTaifiya/AlatTaifiya(3).jpeg"
+]     
+      }
+
+      ,
+      {
+        "name": "مجمع لاماك السكني",
+        "location": "الكرادة، مقابل ساحة كهرمانة، بغداد",
+        "area": "غير محدد",
+        "green_spaces": "إطلالات داخلية على المساحات الخضراء (اللاندمارك)",
+        "total_units": null,
+        "buildings_count": 4,
+        "total_houses": null,
+        "unit_sizes": "تتراوح مساحات الشقق من 98.5 متر² إلى 211 متر²",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "نظام السمارت هوم لتوفير بيئة سكنية ذكية وعصرية",
+          "مركز لياقة بدنية (جيم) للرجال والنساء",
+          "مسبح مخصص للاسترخاء والترفيه",
+          "مركز تجاري يضم مطاعم ومرافق خدمية",
+          "توفير مواقف سيارات لضمان راحة السكان"
+        ],
+        "availability": "غير جاهز للسكن",
+        "contact": {
+          "phone": "0774 820 4232",
+          "email": "https://mrc-baghdad.online/",
+          "website": "https://lamacc.com/"
+        },
+        "images": [
+          "../images/reign2/Building/lamacc/lamacc (1)",
+          "../images/reign2/Building/lamacc/lamacc (2)"
+
+
+        ]
+      },
+      {
+        "name": "مجمع سومو السكني",
+        "location": "منطقة زيونة، بجانب الرصافة، بالقرب من نصب الشهيد، بغداد، العراق",
+        "area": "غير محدد",
+        "green_spaces": "غير محدد",
+        "total_units": 453,
+        "buildings_count": 31,
+        "total_houses": null,
+        "unit_sizes": "125 متر²، 150 متر²، 175 متر²، 200 متر²",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "بنية تحتية متكاملة تشمل شبكات الكهرباء، الصرف الصحي، أنظمة مكافحة الحرائق، نظام توزيع الغاز المركزي، وأنظمة الاتصالات والإنترنت",
+          "قاعات للمناسبات",
+          "مبنى إداري",
+          "مبنى أمني",
+          "موقف للسيارات",
+          "مركز تجاري",
+          "مطاعم",
+          "محطة وقود"
+        ],
+        "availability": "غير جاهز للسكن",
+        "contact": {
+          "phone": "+964-1-7726574",
+          "email": "info@somooil.gov.iq",
+          "website": "غير متوفر"
+        },
+        "images": [
+          "../images/regin2/Building/Sumo/Sumo (1).jpeg",
+          "../images/regin2/Building/Sumo/Sumo (2).jpeg",
+          "../images/regin2/Building/Sumo/Sumo (3).jpeg",
+          "../images/regin2/Building/Sumo/Sumo (4).jpeg",
+          "../images/regin2/Building/Sumo/Sumo (5).jpeg"
+        ]
+      },
+      {
+        "name": "مجمع الرفاه السكني",
+        "location": "منطقة البلديات، مضمار العابد، خلف مدرسة عائشة، جانب الرصافة، بغداد، العراق",
+        "area": "غير محدد",
+        "green_spaces": "مساحات خضراء وحدائق",
+        "total_units": 200,
+        "buildings_count": 5,
+        "total_houses": null,
+        "unit_sizes": "145 إلى 160 متر²",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "توفير الكهرباء والماء على مدار 24 ساعة",
+          "نظام غاز مركزي يصل إلى داخل كل شقة",
+          "خدمات أمنية متواصلة على مدار الساعة",
+          "اتصال إنترنت عالي السرعة",
+          "مساحات خضراء وحدائق",
+          "مركز تسوق (مول) مكون من ثلاثة طوابق يضم سوبر ماركت، مخابز، صيدليات، مطاعم، وكافيهات"
+        ],
+        "availability": "جاهز للسكن",
+        "contact": {
+          "phone": "07845451987",
+          "email": "alrfah@gmail.com",
+          "website": "https://www.alyaqinco.com/alrfah-alskny",
+          "developer": "شركة اليقين للعقارات والاستثمارات العامة"
+        },
+        "images": [
+          "../images/regin2/Building/Al-Rafah/Al-Rafah (1).jpeg",
+          "../images/regin2/Building/Al-Rafah/Al-Rafah (2).jpeg",
+          "../images/regin2/Building/Al-Rafah/Al-Rafah (3).jpeg",
+          "../images/regin2/Building/Al-Rafah/Al-Rafah (4).jpeg"
+        ]
+      },
+      {
+        "name": "مجمع أبراج الهادي السكني",
+        "location": "سريع محمد القاسم، بالقرب من شركة تويوتا، بغداد، جانب الرصافة، العراق",
+        "area": "غير محدد",
+        "green_spaces": "مساحات خضراء",
+        "total_units": null,
+        "buildings_count": 3,
+        "total_houses": null,
+        "unit_sizes": "من 120 متر² إلى 350 متر²",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "مول تجاري بمساحة 12,000 متر² وبارتفاع 5 طوابق",
+          "عيادات طبية",
+          "روضة أطفال",
+          "مدرسة دولية",
+          "مساحات خضراء",
+          "ملاعب",
+          "نادي رياضي",
+          "مواقف سيارات تحت الأرض",
+          "نظام أمني متكامل يتضمن كاميرات مراقبة وحراسة 24/7",
+          "تصاميم حديثة مزودة بأنظمة ذكية تليق بالعائلة العراقية",
+          "عزل صوتي وحراري بجدران بسمك 40 سم"
+        ],
+        "availability": "غير جاهز للسكن",
+        "contact": {
+          "phone": "0772800444",
+          "email": "غير متوفر",
+          "website": "غير متوفر"
+        },
+        "images": [
+          "../images/regin2/Building/Al-Hadi/AlHadi (1).jpeg",
+          "../images/regin2/Building/Al-Hadi/AlHadi (2).jpeg",
+          "../images/regin2/Building/Al-Hadi/AlHadi (3).jpeg",
+          "../images/regin2/Building/Al-Hadi/AlHadi (4).jpeg",
+          "../images/regin2/Building/Al-Hadi/AlHadi (5).jpeg",
+          "../images/regin2/Building/Al-Hadi/AlHadi (6).jpeg",
+          "../images/regin2/Building/Al-Hadi/AlHadi (7).jpeg"
+        ]
+      },
+      {
+        "name": "مدينة بسماية السكنية",
+        "location": "جنوب شرق محافظة بغداد، ضمن قضاء المدائن، على بُعد 10 كم من حدود المدينة و25 كم من مركزها، جانب الرصافة، العراق",
+        "area": "غير محدد",
+        "green_spaces": "متنزهات وملاعب",
+        "total_units": 100000,
+        "buildings_count": null,
+        "total_houses": null,
+        "unit_sizes": "100 متر² (غرفتين نوم)، 120 متر² (ثلاث غرف نوم)، 140 متر² (أربع غرف نوم)",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "144 مدرسة ابتدائية و91 مدرسة ثانوية",
+          "مراكز صحية ومستشفيات",
+          "أسواق ومجمعات تجارية",
+          "متنزهات، ملاعب، ومراكز رياضية",
+          "شوارع معبّدة، نظام صرف صحي، وشبكة كهرباء وماء متكاملة"
+        ],
+        "availability": "جاهز للسكن",
+        "contact": {
+          "phone": "07724063650",
+          "email": "غير متوفر",
+          "website": "www.bismayah.org"
+        },
+        "images": [
+          "../images/regin2/Building/Pasmaya/Pasmaya (1).jpeg",
+          "../images/regin2/Building/Pasmaya/Pasmaya (2).jpeg",
+          "../images/regin2/Building/Pasmaya/Pasmaya (3).jpeg",
+          "../images/regin2/Building/Pasmaya/Pasmaya (4).jpeg"
+        ]
+      }
+      
+      
+      
+      
+      
+      
+
+    ]
+  }
+}

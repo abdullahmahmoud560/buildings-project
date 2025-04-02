@@ -1,0 +1,191 @@
+{
+  "reign1": {
+    "houses": [
+      {
+        "name": "مجمع بدور بغداد السكني",
+        "location": "بغداد - قريب من الشارع الرئيسي ومطار بغداد",
+        "area": "مساحات متعددة: 250، 265، 300، 400 متر مربع",
+        "green_spaces": "حديقة كبيرة لكل فيلا",
+        "total_units": 4,
+        "buildings_count": null,
+        "total_houses": 4,
+        "unit_sizes": "265 متر مربع، 300 متر مربع، 400 متر مربع",
+        "price_range": {
+          "min": 95000000,
+          "max": 400000000
+        },
+        "services": [
+          "موقع قريب من الشارع الرئيسي",
+          "قريب من مطار بغداد",
+          "كراج خاص",
+          "حديقة خاصة لكل فيلا",
+          "نظام أمني متكامل 24/7"
+        ],
+        "availability": "جاهز للاستلام",
+        "contact": {
+          "phone": "+964-7801144441",
+          "email": "budoorcomplex.iq@yahoo.com",
+          "website": "https://www.odoo.com/customers/budoor-baghdad-complex-mjm-bdwr-bgdd-lskny-13504716"
+        },
+        "images": [
+        
+            "../images/reign1/Houses//Budor/b0.jpg",
+            "../images/reign1/Houses//Budor/b-1.jpg",
+            "../images/reign1/Houses//Budor/b1.jpg",
+            "../images/reign1/Houses//Budor/b2.jpg",
+            "../images/reign1/Houses//Budor/b3.jpg",
+            "../images/reign1/Houses//Budor/b4.jpg",
+            "../images/reign1/Houses//Budor/b6.jpg",
+            "../images/reign1/Houses//Budor/b7.jpg",
+            "../images/reign1/Houses//Budor/b8.jpg",
+            "../images/reign1/Houses//Budor/b9.jpg",
+            "../images/reign1/Houses//Budor/b10.jpg",
+            "../images/reign1/Houses//Budor/b11.jpg"
+        ]
+      },
+      {
+        "name": "مجمع الزيتون السكني",
+        "location": "بغداد - أبو غريب، شارع الزيتون مقابل دائرة بلدية أبو غريب",
+        "area": "252 متر مربع لكل وحدة",
+        "green_spaces": "حديقة لكل وحدة",
+        "total_units": 1000,
+        "buildings_count": null,
+        "total_houses": 1000,
+        "unit_sizes": "252 متر مربع",
+        "price_range": {
+          "min": 0,
+          "max": 0
+        },
+        "services": [
+          "مدارس ابتدائية وثانوية",
+          "رياض أطفال",
+          "مركز تجاري (مول)",
+          "سوبرماركت",
+          "مركز صحي",
+          "صيدلية",
+          "ملاعب",
+          "حدائق ومتنزهات",
+          "منظومة غاز مركزية"
+        ],
+        "availability": "جاهز للسكن",
+        "contact": {
+          "phone": "07827763220",
+          "email": "not available",
+          "website": "not available"
+        },
+        "images": [
+          "../images/reign1/Houses/Al-Zeitoun/Al-Zeitoun (1).jpeg",
+          "../images/reign1/Houses/Al-Zeitoun/Al-Zeitoun (2).jpeg",
+          "../images/reign1/Houses/Al-Zeitoun/Al-Zeitoun (3).jpeg"
+        ]
+      },
+      {
+        "name": "مجمع شناشيل بغداد السكني",
+        "location": "جنوب منطقة الدورة على الطريق السريع بين الدورة واليوسفية",
+        "area": "160 - 480 متر مربع",
+        "green_spaces": "حدائق ومساحات خضراء واسعة",
+        "total_units": 777,
+        "buildings_count": null,
+        "total_houses": 777,
+        "unit_sizes": "160، 200، 240، 320، 480 متر مربع",
+        "price_range": {
+          "min": 0,
+          "max": 0
+        },
+        "services": [
+          "مدارس أهلية داخل المجمع",
+          "مجمع تجاري",
+          "حدائق ومساحات خضراء",
+          "مناطق مخصصة للأطفال",
+          "كهرباء متوفرة 24 ساعة",
+          "منظومة تصفية مياه مركزية",
+          "منظومة غاز مركزية",
+          "خدمة الإنترنت عبر الكيبل الضوئي",
+          "كاميرات مراقبة وأنظمة أمان متكاملة"
+        ],
+        "availability": "جاهز للسكن",
+        "contact": {
+          "phone": "07703377772",
+          "email": "not available",
+          "website": "not available"
+        },
+        "images": [
+          "../images/reign1/Houses/ShanasheelBaghdad/ShanasheelBaghdad (1).jpeg",
+          "../images/reign1/Houses/ShanasheelBaghdad/ShanasheelBaghdad (2).jpeg",
+          "../images/reign1/Houses/ShanasheelBaghdad/ShanasheelBaghdad (3).jpeg",
+          "../images/reign1/Houses/ShanasheelBaghdad/ShanasheelBaghdad (4).jpeg"
+        ]
+      },
+      {
+        "name": "مجمع البعد الرابع السكني",
+        "location": "المناطق المحيطة بمطار بغداد الدولي، بغداد، العراق",
+        "area": "غير محدد",
+        "green_spaces": "غير محدد",
+        "total_units": null,
+        "buildings_count": null,
+        "total_houses": null,
+        "unit_sizes": "غير محدد",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "وحدات سكنية مكتملة وجاهزة للسكن فوراً",
+          "بنية تحتية متكاملة تشمل الكهرباء، الماء، الطرق والصرف الصحي",
+          "مجتمع سكني بدأ الحياة فيه"
+        ],
+        "availability": "غير جاهز للسكن",
+        "contact": {
+          "phone": "+964-1-7789762",
+          "email": "info@4th-dim.com",
+          "website": "https://4th-dim.com/ar"
+        },
+        "images": [
+             "../images/reign1/Houses/4th-dim/4th-dim.jpg",
+             "../images/reign1/Houses/4th-dim/4th-dim1.jpg",
+             "../images/reign1/Houses/4th-dim/4th-dim2.jpg",
+             "../images/reign1/Houses/4th-dim/4th-dim3.jpg",
+             "../images/reign1/Houses/4th-dim/4th-dim5.jpg"
+
+        ]
+      },
+      {
+        "name": "مجمع نجمة بغداد السكني",
+        "location": "منطقة العامرية، غرب بغداد، بالقرب من كلية الزراعة، العراق",
+        "area": "166 دونمًا",
+        "green_spaces": "حدائق ومساحات خضراء واسعة",
+        "total_units": 943,
+        "buildings_count": null,
+        "total_houses": 943,
+        "unit_sizes": "250 متر²، طابقين مع حديقة خاصة وكراج",
+        "price_range": {
+          "min": null,
+          "max": null
+        },
+        "services": [
+          "مركز تجاري يضم مجموعة متنوعة من المتاجر",
+          "مول تجاري",
+          "مدارس لجميع المراحل الدراسية",
+          "حدائق ومساحات خضراء واسعة",
+          "ملاعب للأطفال",
+          "مركز صحي لتلبية احتياجات السكان الطبية",
+          "شبكات ماء وكهرباء منفصلة لكل وحدة",
+          "نظام أمان ومراقبة على مدار الساعة",
+          "جامع"
+        ],
+        "availability": "جاهز للسكن",
+        "contact": {
+          "phone": "07801111735",
+          "email": null,
+          "website": null
+        },
+        "images": [
+          "../images/reign1/Houses/BaghdadStart/BaghdadStart (1).jpeg",
+          "../images/reign1/Houses/BaghdadStart/BaghdadStart (2).jpeg"
+        ]
+      }
+      
+      
+    ]
+  }
+}
