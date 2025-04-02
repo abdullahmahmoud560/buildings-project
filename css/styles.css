@@ -397,3 +397,31 @@ button {
         padding: 6px 10px;
     }
 }
+
+/* 🔍 تحسين الإدخال (Search Box) */
+.search-box {
+    background-color: white !important;
+    color: black !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px; /* اجعل العرض ثابتًا ومناسبًا */
+}
+
+/* 🔗 تنسيق "من نحن" */
+.about-link {
+    color: white !important; /* لون النص */
+    text-decoration: none !important; /* إزالة التسطير */
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* محاذاة في خط مستقيم */
+    height: 45px; /* محاذاة مع مربع البحث */
+}
+
+/* 📌 إضافة مسافة بين الإدخال ورابط "من نحن" */
+.search-section {
+    gap: 15px; /* إضافة مسافة بين العناصر */
+}
+
