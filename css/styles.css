@@ -170,7 +170,7 @@ button {
 
 /* ✅ Result links  yellow */
 .list-group-item a {
-    color: black;
+    color: white;
     font-weight: bold;
     text-decoration: none;
 }
