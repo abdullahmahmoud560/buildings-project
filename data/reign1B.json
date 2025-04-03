@@ -73,7 +73,40 @@
                     "../images/reign1/1/BawaabatAleiraq/BawaabatAleiraq4.jpg"
                 ]
             },
-           ,
+            {
+                "name": "مجمع أبراج النخلة السكني",
+                "location": "بغداد - منطقة مطار المثنى",
+                "green_spaces": "47,560 متر مربع",
+                "building_type": "عمودي",
+                "total_units": " 2,016",
+                "buildings_count": 20,
+                "unit_sizes": "شقق بمساحات 224 و 221 متر مربع",
+                "price_range": {
+                    "min": "13500000",
+                    "max": "14500000"
+                },
+                "services": [
+                    "مدرسة عالمية، روضة وحضانة",
+                    "مول تجاري",
+                    "سينما",
+                    "ملاعب رياضية",
+                    "مستوصف طبي",
+                    "مسجد وحدائق"
+                ],
+                "availability": "جاهز للسكن",
+                "contact": {
+                    "phone": "+964 780 192 2220",
+                    "email": "info@palmtowersiq.com",
+                    "website": "https://palmtowersiq.com/"
+                },
+                "images": [
+                    "../images/reign1/1/palm/palm (1).jpg",
+                    "../images/reign1/1/palm/palm (2).jpg",
+                    "../images/reign1/1/palm/palm (1).png",
+                    "../images/reign1/1/palm/palm (2).png",
+                    "../images/reign1/1/palm/palm (3).png"
+                ]
+            },
             {
                 "name": "مجمع زهراء السيدية",
                 "location": "بغداد - السيدية",
@@ -698,7 +731,6 @@
       "email": "غير متوفر",
       "website": "غير متوفر"
     },
-
     "images": [
       "../images/reign1/1/IbnFirnas/IbnFirnas (1).jpeg",
       "../images/reign1/1/IbnFirnas/IbnFirnas (2).jpeg",
