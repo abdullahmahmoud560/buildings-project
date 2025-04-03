@@ -11,14 +11,35 @@
 
     <body class="details-page-background">
 
-    <header>
-        <button class="back-button" onclick="window.history.back()">&#8592; رجوع</button>
-        <div class="header-content">دليل المجمعات السكنية في بغداد</div>
-    </header>
-
+        <header class="header-container text-light py-2 shadow">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <!-- القسم الأيسر: الهاتف -->
+                <div class="d-flex align-items-center phone-section">
+                    <img src="../images/CallUs2.png" alt="Phone Icon" width="30" height="30" class="me-2">
+                    <a href="tel:07716361821" class="text-light text-decoration-none fs-5 phone-number">07716361821</a>
+                </div>
+        
+                <!-- القسم الأوسط: العنوان -->
+                <div class="text-center flex-grow-1 title-section">
+                    <h3 class="mb-0 fs-4 fw-bold">دليل المجمعات السكنية في بغداد</h3>
+                </div>
+        
+                <!-- القسم الأيمن: البحث و "من نحن" -->
+                <div class="d-flex align-items-center search-section">
+                    <input type="text" id="searchInput" class="form-control me-2 search-box" placeholder="🔍 ابحث عن مجمع"/>
+                     <a href="contact.html" class="about-link">من نحن</a>
+                </div>
+            </div>
+        </header>
     <div class="container mt-5">
-        <h1 id="name"></h1>
-        <div id="info"></div>
+        <div class="col-md-5 p-2 rounded shadow w-100" style="margin-bottom: 25px;">
+            <h1 class="text-center mb-4" style="color: white !important;" id="name"></h1>
+        </div>
+        <div class="container mt-4">
+            <div class="row justify-content-center" id="info"></div>
+        </div>
+        
+        
 
         <h2 class="mt-4">صور العقار</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">

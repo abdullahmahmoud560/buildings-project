@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const regionSelect = document.getElementById('region');
     const typeSelect = document.getElementById('type');
-
+    
     if (regionSelect && typeSelect) {
         function fetchFilteredData() {
             const region = regionSelect.value;
@@ -55,35 +55,32 @@ function updateResults(region, type) {
     const detailsDiv = document.getElementById('details');
     const selectedServices = document.getElementById('services').value;
     const selectedAvailability = document.getElementById('availability').value;
-
-    let results = [];
+    let results = [...data[region].building, ...data[region].houses];
     if (type === 'building') {
         results = data[region].building;
     } else if (type === 'houses') {
         results = data[region].houses;
-    } else {
-        results = [...data[region].building, ...data[region].houses];
     }
-
     const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
     const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
-
     const filteredResults = results.filter(item => {
         const itemMinPrice = item.price_range?.min || 0;
-        const itemMaxPrice = item.price_range?.max || Infinity;
-
+        const itemMaxPrice = item.price_range?.max || Infinity;    
+        if(item.maxPrice == `` || item.minPrice == `` || item.services == `` || item.availability == ``)
+        {
         return itemMinPrice >= minPrice &&
             itemMaxPrice <= maxPrice &&
-            (selectedServices === '' || item.services?.includes(selectedServices)) &&
+            (selectedServices === '' || item.services.includes(selectedServices)) &&
             (selectedAvailability === '' || item.availability === selectedAvailability) &&
             item.availability !== "Sold Out";
+        }
     });
 
+    console.log(filteredResults);
     if (filteredResults.length > 0) {
         detailsDiv.innerHTML = filteredResults.map((item) => {
             const selectedType = item.__type || (data[region].building.includes(item) ? 'building' : 'houses');
             const itemIndex = data[region][selectedType].indexOf(item);
-
             return `
                 <li class="list-group-item">
                     <a href="details.html?region=${region}&type=${selectedType}&index=${itemIndex}" class="text-decoration-none">
@@ -92,7 +89,21 @@ function updateResults(region, type) {
                 </li>
             `;
         }).join('');
-    } else {
+    }else if(results.length>0){
+        console.log(results);
+        detailsDiv.innerHTML = results.map((item) => {
+            const selectedType = item.__type || (data[region].building.includes(item) ? 'building' : 'houses');
+            const itemIndex = data[region][selectedType].indexOf(item);
+            return `
+                <li class="list-group-item">
+                    <a href="details.html?region=${region}&type=${selectedType}&index=${itemIndex}" class="text-decoration-none">
+                        ${item.name}
+                    </a>
+                </li>
+            `;
+        }).join('');
+    } 
+    else {
         detailsDiv.innerHTML = "<p>❌ لا توجد عقارات ضمن المعايير المحددة.</p>";
     }
 
@@ -114,9 +125,7 @@ async function fetchData(region, type) {
     } else {
         filesToFetch.push(`/data/${region}B.json`, `/data/${region}H.json`);
     }
-
     data[region] = { building: [], houses: [] };
-
     try {
         await Promise.all(filesToFetch.map(async (file) => {
             const response = await fetch(file);
@@ -128,8 +137,8 @@ async function fetchData(region, type) {
             } else if (file.includes('H.json')) {
                 data[region].houses = fileData[region]?.houses || [];
             }
-        }));
 
+        }));
         updateResults(region, type);
     } catch (error) {
         console.error('❌ Error loading JSON file:', error);

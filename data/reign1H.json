@@ -53,8 +53,8 @@
         "total_houses": 1000,
         "unit_sizes": "252 متر مربع",
         "price_range": {
-          "min": 0,
-          "max": 0
+          "min": "1,400,000",
+          "max": "352,800,000"
         },
         "services": [
           "مدارس ابتدائية وثانوية",
@@ -70,8 +70,8 @@
         "availability": "جاهز للسكن",
         "contact": {
           "phone": "07827763220",
-          "email": "not available",
-          "website": "not available"
+          "email": "غير متوفر",
+          "website": "غير متوفر"
         },
         "images": [
           "../images/reign1/Houses/Al-Zeitoun/Al-Zeitoun (1).jpeg",
@@ -89,8 +89,8 @@
         "total_houses": 777,
         "unit_sizes": "160، 200، 240، 320، 480 متر مربع",
         "price_range": {
-          "min": 0,
-          "max": 0
+          "min": "112,000,000",
+          "max": "336,000,000"
         },
         "services": [
           "مدارس أهلية داخل المجمع",
@@ -106,8 +106,8 @@
         "availability": "جاهز للسكن",
         "contact": {
           "phone": "07703377772",
-          "email": "not available",
-          "website": "not available"
+          "email": "غير متوفر",
+          "website": "غير متوفر"
         },
         "images": [
           "../images/reign1/Houses/ShanasheelBaghdad/ShanasheelBaghdad (1).jpeg",
@@ -119,15 +119,15 @@
       {
         "name": "مجمع البعد الرابع السكني",
         "location": "المناطق المحيطة بمطار بغداد الدولي، بغداد، العراق",
-        "area": "غير محدد",
-        "green_spaces": "غير محدد",
-        "total_units": null,
+        "area": "10,000,000 متر مربع",
+        "green_spaces": "2,000,000 متر مربع",
+        "total_units": "2,000,000",
         "buildings_count": null,
-        "total_houses": null,
-        "unit_sizes": "غير محدد",
+        "total_houses": 20,
+        "unit_sizes": "تتراوح بين 100 متر مربع إلى 300 متر مربع، مع إمكانية وجود وحدات أكبر في حال وجود فيلات أو شقق عائلية واسعة",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "50,000,000",
+          "max": "300,000,000"
         },
         "services": [
           "وحدات سكنية مكتملة وجاهزة للسكن فوراً",
@@ -159,8 +159,8 @@
         "total_houses": 943,
         "unit_sizes": "250 متر²، طابقين مع حديقة خاصة وكراج",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "70,000,000",
+          "max": "400,000,000"
         },
         "services": [
           "مركز تجاري يضم مجموعة متنوعة من المتاجر",
@@ -176,16 +176,14 @@
         "availability": "جاهز للسكن",
         "contact": {
           "phone": "07801111735",
-          "email": null,
-          "website": null
+          "email": "غير متوفر",
+          "website": "غير متوفر"
         },
         "images": [
           "../images/reign1/Houses/BaghdadStart/BaghdadStart (1).jpeg",
           "../images/reign1/Houses/BaghdadStart/BaghdadStart (2).jpeg"
         ]
       }
-      
-      
     ]
   }
 }
