@@ -170,7 +170,6 @@ function loadPropertyDetails(data, region, type, index) {
         document.getElementById('name').textContent = item.name;
         document.getElementById('info').innerHTML = `
             <p><strong>الموقع:</strong> ${item.location}</p>
-            <p><strong>المساحة:</strong> ${item.area}</p>
             <p><strong>المساحات الخضراء:</strong> ${item.green_spaces}</p>
             <p><strong>إجمالي الوحدات:</strong> ${item.total_units}</p>
             <p><strong>${item.buildings_count !== null ? "عدد المباني" : "إجمالي البيوت"}:</strong> ${item.buildings_count !== null ? item.buildings_count : item.total_houses}</p>
