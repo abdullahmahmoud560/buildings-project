@@ -23,12 +23,7 @@
                 <div class="text-center flex-grow-1 title-section">
                     <h3 class="mb-0 fs-4 fw-bold">دليل المجمعات السكنية في بغداد</h3>
                 </div>
-        
-                <!-- القسم الأيمن: البحث و "من نحن" -->
-                <div class="d-flex align-items-center search-section">
-                    <input type="text" id="searchInput" class="form-control me-2 search-box" placeholder="🔍 ابحث عن مجمع"/>
-                     <a href="contact.html" class="about-link">من نحن</a>
-                </div>
+
             </div>
         </header>
     <div class="container mt-5">
@@ -71,6 +66,73 @@
     </footer>
 
     <script src="/js/script.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // استخراج المعلمات من URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const region = urlParams.get('region');
+    const type = urlParams.get('type');
+    const index = parseInt(urlParams.get('index'));
 
+    // التأكد من وجود المعلمات
+    if (name && region && type && !isNaN(index)) {
+        // استرجاع البيانات من localStorage
+        const data = JSON.parse(localStorage.getItem("searchResults"));
+        if (data && data.results && data.region === region && data.type === type) {
+            loadPropertyDetails(data.results, region, type, index);
+        } else {
+            document.getElementById('info').innerHTML = "<p>❌ لا توجد بيانات للعرض.</p>";
+        }
+    } else {
+        document.getElementById('info').innerHTML = "<p>❌ المعلمات غير صحيحة.</p>";
+    }
+});
+
+function loadPropertyDetails(data, region, type, index) {
+    const propertyType = type === 'building' ? 'building' : 'houses';
+    const item = data[region]?.[propertyType]?.[index];
+
+    if (item) {
+        document.getElementById('name').textContent = item.name;
+        document.getElementById('info').innerHTML = `
+            <p><strong>الموقع:</strong> ${item.location}</p>
+            <p><strong>المساحات الخضراء:</strong> ${item.green_spaces}</p>
+            <p><strong>إجمالي الوحدات:</strong> ${item.total_units}</p>
+            <p><strong>${item.buildings_count !== null ? "عدد المباني" : "إجمالي البيوت"}:</strong> ${item.buildings_count !== null ? item.buildings_count : item.total_houses}</p>
+            <p><strong>مساحات الوحدات:</strong> ${item.unit_sizes}</p>
+            <p><strong>السعر:</strong> ${item.price_range.min} - ${item.price_range.max} دينار عراقي</p>
+            <p><strong>الخدمات:</strong> ${item.services.join(", ")}</p>
+            <p><strong>التوافر:</strong> ${item.availability}</p>
+            <p><strong>الاتصال:</strong> <a href="tel:${item.contact.phone}">${item.contact.phone}</a></p>
+            <p><strong>البريد الإلكتروني:</strong> <a href="mailto:${item.contact.email}">${item.contact.email}</a></p>
+            <p><strong>الموقع الإلكتروني:</strong> <a href="${item.contact.website}" target="_blank">${item.contact.website}</a></p>
+        `;
+
+        const carouselIndicators = document.getElementById('carousel-indicators');
+        const carouselInner = document.getElementById('carousel-inner');
+
+        carouselIndicators.innerHTML = "";
+        carouselInner.innerHTML = "";
+
+        item.images.forEach((img, imgIndex) => {
+            carouselIndicators.innerHTML += `
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="${imgIndex}"
+                    ${imgIndex === 0 ? 'class="active" aria-current="true"' : ''} aria-label="Slide ${imgIndex + 1}">
+                </button>
+            `;
+
+            carouselInner.innerHTML += `
+                <div class="carousel-item ${imgIndex === 0 ? 'active' : ''}">
+                    <img src="${img}" class="d-block w-100 img-fluid" alt="Property Image">
+                </div>
+            `;
+        });
+    } else {
+        document.getElementById('info').innerHTML = "<p>❌ لم يتم العثور على تفاصيل لهذا العقار.</p>";
+    }
+}
+
+</script>
 </body>
 </html>

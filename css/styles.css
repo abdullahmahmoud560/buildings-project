@@ -319,12 +319,10 @@ button {
     margin: 0;
 }
 
-#table, 
-#table th, 
-#table td {
-    background-color: transparent !important;
-    color: white;
+#table, #table th, #table td, #details {
+    color: white !important;
 }
+
 
 @media (max-width: 1024px) {
     .container {
@@ -429,3 +427,4 @@ button {
     color: black !important;
     opacity: 1; /* لجعل اللون واضحًا في بعض المتصفحات */
 }
+

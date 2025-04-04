@@ -4,7 +4,6 @@
       {
         "name": "مجمع الرسالة السكني",
         "location": "جانب الرصافة، حي الرسالة، بداية شارع الضغط",
-        "area": "غير محدد",
         "green_spaces": "مساحات خضراء واسعة",
         "total_units": 624,
         "buildings_count": 13,
@@ -31,15 +30,14 @@
       {
         "name": "مجمع أبراج العطيفية السكني",
         "location": "كورنيش العطيفية، نهاية شارع الدامرجي، خلف جامع المعز، بغداد، العراق",
-        "area": "حوالي 25,800 متر مربع",
         "green_spaces": "حدائق ومساحات خضراء واسعة ونوافير مياه",
-        "total_units": null,
-        "buildings_count": null,
+        "total_units": 300,
+        "buildings_count": 15,
         "total_houses": null,
         "unit_sizes": "160 متر²، تتراوح من 125 متر² إلى 205 متر²",
         "price_range": {
-  "min": null,
-  "max": null
+  "min": "2,640,000",
+  "max": "3,500,000"
 },
 
         "services": [
@@ -49,7 +47,7 @@
           "مناطق مخصصة للمشي وممارسة الرياضة",
           "مواقف متعددة الطوابق للسكان والزوار"
         ],
-        "availability": "جاهز للاستلام",
+        "availability": "جاهز للسكن",
         "contact": {
           "phone": "0783 559 9616",
           "email": "info@abrajatefya.com",
@@ -68,15 +66,14 @@
       {
         "name": "مجمع لاماك السكني",
         "location": "الكرادة، مقابل ساحة كهرمانة، بغداد",
-        "area": "غير محدد",
         "green_spaces": "إطلالات داخلية على المساحات الخضراء (اللاندمارك)",
-        "total_units": null,
+        "total_units": "1,250",
         "buildings_count": 4,
         "total_houses": null,
         "unit_sizes": "تتراوح مساحات الشقق من 98.5 متر² إلى 211 متر²",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "1,000,000",
+          "max": "و3,000,000"
         },
         "services": [
           "نظام السمارت هوم لتوفير بيئة سكنية ذكية وعصرية",
@@ -92,8 +89,8 @@
           "website": "https://lamacc.com/"
         },
         "images": [
-          "../images/reign2/Building/lamacc/lamacc (1)",
-          "../images/reign2/Building/lamacc/lamacc (2)"
+          "../images/reign2/Building/lamacc/lamacc (1).jpeg",
+          "../images/reign2/Building/lamacc/lamacc (2).jpeg"
 
 
         ]
@@ -101,15 +98,14 @@
       {
         "name": "مجمع سومو السكني",
         "location": "منطقة زيونة، بجانب الرصافة، بالقرب من نصب الشهيد، بغداد، العراق",
-        "area": "غير محدد",
-        "green_spaces": "غير محدد",
+        "green_spaces": "33,600",
         "total_units": 453,
         "buildings_count": 31,
         "total_houses": null,
         "unit_sizes": "125 متر²، 150 متر²، 175 متر²، 200 متر²",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "310,000,000",
+          "max": "475,000,000"
         },
         "services": [
           "بنية تحتية متكاملة تشمل شبكات الكهرباء، الصرف الصحي، أنظمة مكافحة الحرائق، نظام توزيع الغاز المركزي، وأنظمة الاتصالات والإنترنت",
@@ -138,15 +134,14 @@
       {
         "name": "مجمع الرفاه السكني",
         "location": "منطقة البلديات، مضمار العابد، خلف مدرسة عائشة، جانب الرصافة، بغداد، العراق",
-        "area": "غير محدد",
         "green_spaces": "مساحات خضراء وحدائق",
         "total_units": 200,
         "buildings_count": 5,
         "total_houses": null,
         "unit_sizes": "145 إلى 160 متر²",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "231,275,000",
+          "max": "255,200,000"
         },
         "services": [
           "توفير الكهرباء والماء على مدار 24 ساعة",
@@ -173,15 +168,14 @@
       {
         "name": "مجمع أبراج الهادي السكني",
         "location": "سريع محمد القاسم، بالقرب من شركة تويوتا، بغداد، جانب الرصافة، العراق",
-        "area": "غير محدد",
         "green_spaces": "مساحات خضراء",
-        "total_units": null,
+        "total_units": 20,
         "buildings_count": 3,
         "total_houses": null,
         "unit_sizes": "من 120 متر² إلى 350 متر²",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "204,000,000",
+          "max": "288,000,000"
         },
         "services": [
           "مول تجاري بمساحة 12,000 متر² وبارتفاع 5 طوابق",
@@ -215,15 +209,14 @@
       {
         "name": "مدينة بسماية السكنية",
         "location": "جنوب شرق محافظة بغداد، ضمن قضاء المدائن، على بُعد 10 كم من حدود المدينة و25 كم من مركزها، جانب الرصافة، العراق",
-        "area": "غير محدد",
         "green_spaces": "متنزهات وملاعب",
         "total_units": 100000,
-        "buildings_count": null,
+        "buildings_count": "120",
         "total_houses": null,
         "unit_sizes": "100 متر² (غرفتين نوم)، 120 متر² (ثلاث غرف نوم)، 140 متر² (أربع غرف نوم)",
         "price_range": {
-          "min": null,
-          "max": null
+          "min": "204,000,000",
+          "max": "360,000,000"
         },
         "services": [
           "144 مدرسة ابتدائية و91 مدرسة ثانوية",
@@ -245,13 +238,6 @@
           "../images/regin2/Building/Pasmaya/Pasmaya (4).jpeg"
         ]
       }
-      
-      
-      
-      
-      
-      
-
     ]
   }
 }

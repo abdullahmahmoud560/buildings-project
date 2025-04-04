@@ -2,36 +2,32 @@
 document.addEventListener("DOMContentLoaded", () => {
     const regionSelect = document.getElementById('region');
     const typeSelect = document.getElementById('type');
-    
-    if (regionSelect && typeSelect) {
+    const searchButton = document.getElementById("search");
+
+    if (searchButton) {
+        // دالة لاسترجاع القيم الحالية من الفلاتر عند الضغط على الزر
         function fetchFilteredData() {
             const region = regionSelect.value;
             const type = typeSelect.value;
-            console.log("Region:", region, "Type:", type);
+            const services = document.getElementById('services').value;
+            const availability = document.getElementById('availability').value;
+            const minPrice = document.getElementById('minPrice').value;
+            const maxPrice = document.getElementById('maxPrice').value;
+
+            console.log("Region:", region, "Type:", type, "Services:", services, "Availability:", availability, "Price Range:", minPrice, "-", maxPrice);
 
             if (region) {
-                fetchData(region, type);
+                fetchData(region, type, services, availability, minPrice, maxPrice);
             }
         }
 
-        regionSelect.addEventListener('change', () => {
-            typeSelect.value = "";
-            fetchFilteredData();
-        });
-
-        typeSelect.addEventListener('change', fetchFilteredData);
-
-        ['services', 'availability', 'minPrice', 'maxPrice'].forEach(id => {
-            const element = document.getElementById(id);
-            if (element) {
-                element.addEventListener('input', fetchFilteredData);
-                element.addEventListener('change', fetchFilteredData);
-            }
-        });
+        // استدعاء `fetchFilteredData` فقط عند الضغط على زر البحث
+        searchButton.addEventListener('click', fetchFilteredData);
 
         resetForm();
     }
 
+    // معالجة المعلمات من الـ URL
     const urlParams = new URLSearchParams(window.location.search);
     const soldout = urlParams.get('soldout');
 
@@ -50,65 +46,59 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+
 // ✅ Update Search Results
 function updateResults(region, type) {
-    const detailsDiv = document.getElementById('details');
-    const selectedServices = document.getElementById('services').value;
-    const selectedAvailability = document.getElementById('availability').value;
-    let results = [...data[region].building, ...data[region].houses];
-    if (type === 'building') {
-        results = data[region].building;
-    } else if (type === 'houses') {
-        results = data[region].houses;
-    }
-    const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
-    const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
-    const filteredResults = results.filter(item => {
-        const itemMinPrice = item.price_range?.min || 0;
-        const itemMaxPrice = item.price_range?.max || Infinity;    
-        if(item.maxPrice == `` || item.minPrice == `` || item.services == `` || item.availability == ``)
-        {
-        return itemMinPrice >= minPrice &&
-            itemMaxPrice <= maxPrice &&
-            (selectedServices === '' || item.services.includes(selectedServices)) &&
-            (selectedAvailability === '' || item.availability === selectedAvailability) &&
-            item.availability !== "Sold Out";
-        }
-    });
+    try {
+        const detailsDiv = document.getElementById('details');
+        const selectedServices = document.getElementById('services').value;
+        const selectedAvailability = document.getElementById('availability').value;
+        const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
+        const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
 
-    console.log(filteredResults);
-    if (filteredResults.length > 0) {
-        detailsDiv.innerHTML = filteredResults.map((item) => {
-            const selectedType = item.__type || (data[region].building.includes(item) ? 'building' : 'houses');
-            const itemIndex = data[region][selectedType].indexOf(item);
-            return `
-                <li class="list-group-item">
-                    <a href="details.html?region=${region}&type=${selectedType}&index=${itemIndex}" class="text-decoration-none">
-                        ${item.name}
-                    </a>
-                </li>
-            `;
-        }).join('');
-    }else if(results.length>0){
+        // جلب البيانات المناسبة حسب النوع المحدد
+        let results = type ? data[region][type] : [...data[region].building, ...data[region].houses];
         console.log(results);
-        detailsDiv.innerHTML = results.map((item) => {
-            const selectedType = item.__type || (data[region].building.includes(item) ? 'building' : 'houses');
-            const itemIndex = data[region][selectedType].indexOf(item);
-            return `
-                <li class="list-group-item">
-                    <a href="details.html?region=${region}&type=${selectedType}&index=${itemIndex}" class="text-decoration-none">
-                        ${item.name}
-                    </a>
-                </li>
-            `;
-        }).join('');
-    } 
-    else {
-        detailsDiv.innerHTML = "<p>❌ لا توجد عقارات ضمن المعايير المحددة.</p>";
-    }
+        // تصفية النتائج
+        const filteredResults = results.filter(item => filterProperties(item, minPrice, maxPrice, selectedServices, selectedAvailability));
 
-    document.getElementById('results').style.display = "block";
+        // تجهيز البيانات لإضافتها إلى `localStorage`
+        const resultsToStore = (filteredResults.length > 0 ? filteredResults : results).map(item => ({
+            ...item,
+            itemIndex: data[region][getSelectedType(region, item)].indexOf(item),
+            selectedType: getSelectedType(region, item),
+            region
+        }));
+
+        // تخزين النتائج في `localStorage`
+        localStorage.setItem('filteredResults', JSON.stringify(resultsToStore));
+        // التوجيه إلى صفحة النتائج
+        //window.location.href = "results.html";
+        document.getElementById('results').style.display = "block";
+    } catch (error) {
+        console.error("❌ حدث خطأ أثناء تحديث النتائج:", error);
+    }
 }
+
+// دالة لتحديد `selectedType` بناءً على موقع العقار
+function getSelectedType(region, item) {
+    return data[region].building.includes(item) ? 'building' : 'houses';
+}
+
+// دالة تصفية مستقلة
+function filterProperties(item, minPrice, maxPrice, selectedServices, selectedAvailability) {
+    const itemMinPrice = item.price_range?.min || 0;
+    const itemMaxPrice = item.price_range?.max || Infinity;
+
+    return (
+        itemMinPrice >= minPrice &&
+        itemMaxPrice <= maxPrice &&
+        (!selectedServices || item.services.includes(selectedServices)) &&
+        (!selectedAvailability || item.availability === selectedAvailability) &&
+        item.availability !== "Sold Out"
+    );
+}
+
 
 
 // ✅ Data
@@ -116,6 +106,7 @@ let data = {};
 
 // ✅ Fetch Data
 async function fetchData(region, type) {
+
     const filesToFetch = [];
 
     if (type === 'building') {
@@ -275,54 +266,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// ✅ Show Search Results by Name
-function showSearchResultsByName() {
-    const searchQuery = document.getElementById('searchInput').value.toLowerCase(); // الحصول على قيمة البحث وتحويلها إلى حروف صغيرة
-    const detailsDiv = document.getElementById('details');
-    let results = [];
-
-    // تأكد من أن البيانات تم تحميلها قبل التصفية
-    if (!data || Object.keys(data).length === 0) {
-        console.log("❌ البيانات غير متاحة.");
-        return;
-    }
-
-    // تصفية البيانات بناءً على الاسم فقط
-    for (const region in data) {
-        if (data.hasOwnProperty(region)) {
-            results = [
-                ...results,
-                ...data[region].building.filter(item => item.name.toLowerCase().includes(searchQuery)),
-                ...data[region].houses.filter(item => item.name.toLowerCase().includes(searchQuery))
-            ];
-        }
-    }
-
-    // طباعة النتائج في الـ console
-    console.log('Search Results:', results);
-
-    // إذا كانت هناك نتائج، عرضها في التفاصيل
-    if (results.length > 0) {
-        detailsDiv.innerHTML = results.map((item) => {
-            return `
-                <li class="list-group-item">
-                    ${item.name}
-                </li>
-            `;
-        }).join('');
-    } else {
-        detailsDiv.innerHTML = "<p>❌ لم يتم العثور على مجمعات تتطابق مع الاسم الذي بحثت عنه.</p>";
-    }
-
-    // تأكد من ظهور العناصر
-    detailsDiv.style.display = "block";
-}
-
-// الاستماع لحدث الضغط على مفتاح "Enter" فقط
-document.getElementById('searchInput').addEventListener('keyup', function(event) {
-    if (event.key === 'Enter') {
-        console.log("hello"); // طباعة hello في الـ console
-        showSearchResultsByName(); // استدعاء الدالة لإظهار النتائج
-    }
-    console.log("no");
-});
