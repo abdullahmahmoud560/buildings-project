@@ -113,7 +113,7 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
             for (let i = 0; i < mergedData.length; i++) {
                 if ((i == 0 || i == 2) && mergedData[i].building) {
                     for (let j = 0; j < mergedData[i].building.length; j++) {
-                        if (mergedData[i].building[j].name.toLowerCase() === query) {
+                        if (mergedData[i].building[j].name.toLowerCase().includes(query)) {
                             searchResults.push({
                                 ...mergedData[i].building[j],
                                 itemIndex: j,
@@ -125,7 +125,7 @@ document.getElementById('searchInput').addEventListener('keypress', function(eve
                 } 
                 else if ((i == 1 || i == 3) && mergedData[i].houses) {
                     for (let j = 0; j < mergedData[i].houses.length; j++) {
-                        if (mergedData[i].houses[j].name.toLowerCase() === query) {
+                        if (mergedData[i].houses[j].name.toLowerCase().includes(query)) {
                             searchResults.push({
                                 ...mergedData[i].houses[j],
                                 itemIndex: j,
