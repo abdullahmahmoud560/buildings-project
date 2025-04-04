@@ -73,7 +73,7 @@ function updateResults(region, type) {
         // تخزين النتائج في `localStorage`
         localStorage.setItem('filteredResults', JSON.stringify(resultsToStore));
         // التوجيه إلى صفحة النتائج
-        //window.location.href = "results.html";
+        window.location.href = "results.html";
         document.getElementById('results').style.display = "block";
     } catch (error) {
         console.error("❌ حدث خطأ أثناء تحديث النتائج:", error);
