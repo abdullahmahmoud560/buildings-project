@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("Region:", region, "Type:", type, "Services:", services, "Availability:", availability, "Price Range:", minPrice, "-", maxPrice);
 
             if (region) {
-                fetchData(region, type, services, availability, minPrice, maxPrice);
+                fetchData(region, type);
             }
         }
 
@@ -51,17 +51,25 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateResults(region, type) {
     try {
         const detailsDiv = document.getElementById('details');
-        const selectedServices = document.getElementById('services').value;
-        const selectedAvailability = document.getElementById('availability').value;
-        const minPrice = parseInt(document.getElementById('minPrice').value) || 0;
-        const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity;
-
+        const selectedServices = document.getElementById('services').value.toLowerCase(); // خدمات المطلوبة
+        const selectedAvailability = document.getElementById('availability').value.toLowerCase(); // التوافر المطلوب
+        const minPrice = parseInt(document.getElementById('minPrice').value) || 0; // الحد الأدنى للسعر
+        const maxPrice = parseInt(document.getElementById('maxPrice').value) || Infinity; // الحد الأقصى للسعر
         // جلب البيانات المناسبة حسب النوع المحدد
-        let results = type ? data[region][type] : [...data[region].building, ...data[region].houses];
-        console.log(results);
-        // تصفية النتائج
-        const filteredResults = results.filter(item => filterProperties(item, minPrice, maxPrice, selectedServices, selectedAvailability));
-
+        let results = type ? data[region][type] : [...data[region].building, ...data[region].houses];   
+        // تصفية النتائج بناءً على المعايير المختارة
+        const filteredResults = results.filter(item => {
+            const priceLarge = item.price_range.max || 0;
+            const priceSmall = item.price_range.min || 0;
+            console.log(priceLarge,priceSmall);
+            const hasService = selectedServices ? item.services?.includes(selectedServices) : true;
+            const isAvailable = selectedAvailability ? item.availability === selectedAvailability : true;
+    
+            return priceSmall >= minPrice && priceLarge <= maxPrice && hasService && isAvailable;
+        });
+    
+        console.log("✅ النتائج بعد الفلترة:", filteredResults);
+    
         // تجهيز البيانات لإضافتها إلى `localStorage`
         const resultsToStore = (filteredResults.length > 0 ? filteredResults : results).map(item => ({
             ...item,
@@ -69,16 +77,17 @@ function updateResults(region, type) {
             selectedType: getSelectedType(region, item),
             region
         }));
-
+    
         // تخزين النتائج في `localStorage`
         localStorage.setItem('filteredResults', JSON.stringify(resultsToStore));
+    
         // التوجيه إلى صفحة النتائج
         window.location.href = "results.html";
-        document.getElementById('results').style.display = "block";
     } catch (error) {
         console.error("❌ حدث خطأ أثناء تحديث النتائج:", error);
     }
-}
+    
+   }
 
 // دالة لتحديد `selectedType` بناءً على موقع العقار
 function getSelectedType(region, item) {
