@@ -8,11 +8,12 @@
           "green_spaces": "مساحات خضراء واسعة",
           "total_units": 700,
           "buildings_count": null,
+        "building_type": "أفقى",
           "total_houses": 700,
           "unit_sizes": "200 متر² أرض، 265 متر² بناء",
           "price_range": {
-            "min": 110000000,
-            "max": 500000000
+            "min": 750000,
+            "max": 1300000
           },
           "services": [
             "المنزل الذكي لتعزيز الراحة والكفاءة",
@@ -43,42 +44,7 @@
             "../images/regin2/Houses/ALFatih/ALFatih (4).jpeg",
             "../images/regin2/Houses/ALFatih/ALFatih (5).jpeg"
           ]
-        },
-        {
-          "name": "مجمع أبراج حيفا السكني",
-          "location": "شارع حيفا، منطقة الرصافة، مقابل الشقق الهولندية، بغداد، العراق",
-          "area": "غير محدد",
-          "green_spaces": "حدائق ومناطق خضراء",
-          "total_units": 288,
-          "buildings_count": 36,
-          "total_houses": null,
-          "unit_sizes": "من 125 متر² إلى 205 متر² (من غرفتي نوم إلى ثلاث غرف نوم مع صالة، مطبخ، وحمامين)",
-          "price_range": {
-            "min": 226200000,
-            "max": 261000000
-          },
-          "services": [
-            "محلات تجارية تلبي احتياجات السكان اليومية",
-            "قرب المستشفيات والمراكز الطبية",
-            "حدائق ومناطق خضراء",
-            "مواقف سيارات مخصصة للسكان",
-            "نظام أمني متكامل يشمل الحراسة والمراقبة 24/7",
-            "ملاعب رياضية ومناطق مخصصة للأطفال"
-          ],
-          "availability": "غير جاهز للسكن",
-          "contact": {
-            "phone": "07707925000",
-            "email": "غير متوفر",
-            "website": "غير متوفر"
-          },
-          "images": [
-            "../images/regin2/Building/HaifaTowers/HaifaTowers.jpg",
-            "../images/regin2/Building/HaifaTowers/HaifaTowers1.jpg",
-            "../images/regin2/Building/HaifaTowers/HaifaTowers2.jpg",
-            "../images/regin2/Building/HaifaTowers/HaifaTowers3.jpg"
-          ]
         }
-        
       ]
     }
   }

@@ -10,8 +10,8 @@
         "total_houses": null,
         "unit_sizes": "شقق متنوعة المساحات",
         "price_range": {
-          "min": 85000000,
-          "max": 500000000
+          "min": 750000,
+          "max": 1500000
         },
         "services": [
           "مركز تجاري",
@@ -25,7 +25,9 @@
           "email": "resala.cita@gmail.com",
           "website": "غير متوفر"
         },
-        "images": []
+        "images": [
+          "../images/reign2/Building/Resala/Resala.jpg"
+        ]
       },
       {
         "name": "مجمع أبراج العطيفية السكني",
@@ -36,8 +38,8 @@
         "total_houses": null,
         "unit_sizes": "160 متر²، تتراوح من 125 متر² إلى 205 متر²",
         "price_range": {
-  "min": 2640000,
-  "max": 3500000
+  "min": 1300000,
+  "max": 3000000
 },
 
         "services": [
@@ -61,7 +63,6 @@
         "../images/reign2/Building/Al-AtTaifiya/AlatTaifiya(3).jpeg"
 ]     
       }
-
       ,
       {
         "name": "مجمع لاماك السكني",
@@ -73,7 +74,7 @@
         "unit_sizes": "تتراوح مساحات الشقق من 98.5 متر² إلى 211 متر²",
         "price_range": {
           "min": 1000000,
-          "max": 3000000
+          "max": 2500000
         },
         "services": [
           "نظام السمارت هوم لتوفير بيئة سكنية ذكية وعصرية",
@@ -104,8 +105,8 @@
         "total_houses": null,
         "unit_sizes": "125 متر²، 150 متر²، 175 متر²، 200 متر²",
         "price_range": {
-          "min": 310000000,
-          "max": 475000000
+          "min": 2000000,
+          "max": 2500000
         },
         "services": [
           "بنية تحتية متكاملة تشمل شبكات الكهرباء، الصرف الصحي، أنظمة مكافحة الحرائق، نظام توزيع الغاز المركزي، وأنظمة الاتصالات والإنترنت",
@@ -140,8 +141,8 @@
         "total_houses": null,
         "unit_sizes": "145 إلى 160 متر²",
         "price_range": {
-          "min": 231275000,
-          "max": 255200000
+          "min": 1500000,
+          "max": 1750000
         },
         "services": [
           "توفير الكهرباء والماء على مدار 24 ساعة",
@@ -174,8 +175,8 @@
         "total_houses": null,
         "unit_sizes": "من 120 متر² إلى 350 متر²",
         "price_range": {
-          "min": 204000000,
-          "max": 288000000
+          "min": 1000000,
+          "max": 2000000
         },
         "services": [
           "مول تجاري بمساحة 12,000 متر² وبارتفاع 5 طوابق",
@@ -215,8 +216,8 @@
         "total_houses": null,
         "unit_sizes": "100 متر² (غرفتين نوم)، 120 متر² (ثلاث غرف نوم)، 140 متر² (أربع غرف نوم)",
         "price_range": {
-          "min": 204000000,
-          "max": 360000000
+          "min": 900000,
+          "max": 3500000
         },
         "services": [
           "144 مدرسة ابتدائية و91 مدرسة ثانوية",
@@ -236,6 +237,41 @@
           "../images/regin2/Building/Pasmaya/Pasmaya (2).jpeg",
           "../images/regin2/Building/Pasmaya/Pasmaya (3).jpeg",
           "../images/regin2/Building/Pasmaya/Pasmaya (4).jpeg"
+        ]
+      },
+      {
+        "name": "مجمع أبراج حيفا السكني",
+        "location": "شارع حيفا، منطقة الرصافة، مقابل الشقق الهولندية، بغداد، العراق",
+        "area": "غير محدد",
+        "building_type":"عمودي",
+        "green_spaces": "حدائق ومناطق خضراء",
+        "total_units": 288,
+        "buildings_count": 36,
+        "total_houses": null,
+        "unit_sizes": "من 125 متر² إلى 205 متر² (من غرفتي نوم إلى ثلاث غرف نوم مع صالة، مطبخ، وحمامين)",
+        "price_range": {
+          "min": 700000,
+          "max": 1500000
+        },
+        "services": [
+          "محلات تجارية تلبي احتياجات السكان اليومية",
+          "قرب المستشفيات والمراكز الطبية",
+          "حدائق ومناطق خضراء",
+          "مواقف سيارات مخصصة للسكان",
+          "نظام أمني متكامل يشمل الحراسة والمراقبة 24/7",
+          "ملاعب رياضية ومناطق مخصصة للأطفال"
+        ],
+        "availability": "غير جاهز للسكن",
+        "contact": {
+          "phone": "07707925000",
+          "email": "غير متوفر",
+          "website": "غير متوفر"
+        },
+        "images": [
+          "../images/regin2/Building/HaifaTowers/HaifaTowers.jpg",
+          "../images/regin2/Building/HaifaTowers/HaifaTowers1.jpg",
+          "../images/regin2/Building/HaifaTowers/HaifaTowers2.jpg",
+          "../images/regin2/Building/HaifaTowers/HaifaTowers3.jpg"
         ]
       }
     ]

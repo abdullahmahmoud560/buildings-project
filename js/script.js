@@ -14,11 +14,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const minPrice = document.getElementById('minPrice').value;
             const maxPrice = document.getElementById('maxPrice').value;
 
-            console.log("Region:", region, "Type:", type, "Services:", services, "Availability:", availability, "Price Range:", minPrice, "-", maxPrice);
-
             if (region) {
                 fetchData(region, type);
             }
+            if (!region) {
+                const toast = document.getElementById("messageBox");
+                toast.style.visibility = "visible";
+              
+                setTimeout(() => {
+                  toast.style.visibility = "hidden";
+                }, 3000);
+              }
         }
 
         // استدعاء `fetchFilteredData` فقط عند الضغط على زر البحث
@@ -67,9 +73,7 @@ function updateResults(region, type) {
     
             return priceSmall >= minPrice && priceLarge <= maxPrice && hasService && isAvailable;
         });
-    
-        console.log("✅ النتائج بعد الفلترة:", filteredResults);
-    
+        
         // تجهيز البيانات لإضافتها إلى `localStorage`
         const resultsToStore = (filteredResults.length > 0 ? filteredResults : results).map(item => ({
             ...item,
