@@ -8,6 +8,7 @@
         "total_units": 624,
         "buildings_count": 13,
         "total_houses": null,
+        "building_type": "عمودي",
         "unit_sizes": "شقق متنوعة المساحات",
         "price_range": {
           "min": 750000,
@@ -35,6 +36,7 @@
         "green_spaces": "حدائق ومساحات خضراء واسعة ونوافير مياه",
         "total_units": 300,
         "buildings_count": 15,
+        "building_type": "عمودي",
         "total_houses": null,
         "unit_sizes": "160 متر²، تتراوح من 125 متر² إلى 205 متر²",
         "price_range": {
@@ -70,6 +72,7 @@
         "green_spaces": "إطلالات داخلية على المساحات الخضراء (اللاندمارك)",
         "total_units": "1,250",
         "buildings_count": 4,
+        "building_type": "عمودي",
         "total_houses": null,
         "unit_sizes": "تتراوح مساحات الشقق من 98.5 متر² إلى 211 متر²",
         "price_range": {
@@ -101,6 +104,7 @@
         "location": "منطقة زيونة، بجانب الرصافة، بالقرب من نصب الشهيد، بغداد، العراق",
         "green_spaces": "33,600",
         "total_units": 453,
+        "building_type": "عمودي",
         "buildings_count": 31,
         "total_houses": null,
         "unit_sizes": "125 متر²، 150 متر²، 175 متر²، 200 متر²",
@@ -139,6 +143,7 @@
         "total_units": 200,
         "buildings_count": 5,
         "total_houses": null,
+        "building_type": "عمودي",
         "unit_sizes": "145 إلى 160 متر²",
         "price_range": {
           "min": 1500000,
@@ -173,6 +178,7 @@
         "total_units": 20,
         "buildings_count": 3,
         "total_houses": null,
+        "building_type": "عمودي",
         "unit_sizes": "من 120 متر² إلى 350 متر²",
         "price_range": {
           "min": 1000000,
@@ -213,6 +219,7 @@
         "green_spaces": "متنزهات وملاعب",
         "total_units": 100000,
         "buildings_count": "120",
+        "building_type": "عمودي",
         "total_houses": null,
         "unit_sizes": "100 متر² (غرفتين نوم)، 120 متر² (ثلاث غرف نوم)، 140 متر² (أربع غرف نوم)",
         "price_range": {
